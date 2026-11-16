@@ -1,0 +1,12 @@
+# Local IDE and editor files
+.idea/
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
