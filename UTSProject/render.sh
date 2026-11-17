@@ -15,6 +15,7 @@ die() { printf '%s\n' "$*" >&2; exit 1; }
 
 if [[ ${1:-} == -h || ${1:-} == --help ]]; then
   printf 'Usage: %s [model ... | --all]\nDefault models: %s\nShared settings: %s/configs/render_config.sh\nModel settings: %s/<model>/{camera,light,shader}.sh\n' "$0" "${default_models[*]}" "$project" "$model_settings_dir"
+  printf 'Project scene settings: %s/<model>/scene.sh\n' "$model_settings_dir"
   printf 'Sample settings: %s/<model>/{scene,camera,light}.sh\n' "$sample_settings_dir"
   exit 0
 fi
@@ -72,7 +73,7 @@ for model in "${models[@]}"; do
   if [[ -d $sample_settings_dir/$model ]]; then
     [[ ! -d $model_settings_dir/$model ]] || die "$model has both sample and GLB settings"
     [[ -r $sample_settings_dir/$model/scene.sh ]] || die "$model: missing sample scene.sh"
-  else
+  elif [[ ! -f $model_settings_dir/$model/scene.sh ]]; then
     input="$model_root/$model/$model.glb"
     [[ -r $input ]] || die "Missing input: $input"
   fi
@@ -80,7 +81,7 @@ done
 
 exec 9>"$project/.render.lock"
 flock -n 9 || die "Another UTS render is using $project"
-logs=$(mktemp -d /tmp/shadernpr-uts.XXXXXXXX)
+logs=$(mktemp -d "${TMPDIR:-/tmp}/shadernpr-uts.XXXXXXXX")
 export XDG_RUNTIME_DIR="$logs"
 export LD_LIBRARY_PATH="$unity_lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 export VK_DRIVER_FILES="$vulkan_icd"
@@ -124,6 +125,16 @@ for index in "${!models[@]}"; do (
     fi
     if [[ -n ${scene_additional_lights:-} ]]; then
       input_args+=(-utsAdditionalLights "$scene_additional_lights")
+    fi
+  elif [[ -f $model_settings/scene.sh ]]; then
+    source "$model_settings/scene.sh"
+    [[ $unity_scene == Assets/*.unity && -r $project/$unity_scene ]] || die "$model: missing project scene $unity_scene"
+    input_args=(
+      -utsProjectScene "$unity_scene" -matchModel "$scene_model" -matchLight "$scene_light"
+      -matchRefCameras "$scene_ref_cameras"
+    )
+    if [[ -n ${scene_shadow_distance:-} ]]; then
+      input_args+=(-utsSceneShadowDistance "$scene_shadow_distance")
     fi
   else
     input_args=(

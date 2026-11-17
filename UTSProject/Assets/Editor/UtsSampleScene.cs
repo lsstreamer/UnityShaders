@@ -14,6 +14,7 @@ internal static class UtsSampleScene
     {
         string assetScene = relativeScene;
         string staged = null;
+        float shadowDistance = QualitySettings.shadowDistance;
         try
         {
             if (!relativeScene.StartsWith("Assets/", StringComparison.Ordinal))
@@ -40,6 +41,8 @@ internal static class UtsSampleScene
                 throw new FileNotFoundException("Project sample scene not found.", assetScene);
 
             var scene = EditorSceneManager.OpenScene(assetScene);
+            if (OrbitRenderMatch.BatchArgument(args, "-utsSceneShadowDistance", false) != null)
+                QualitySettings.shadowDistance = OrbitRenderMatch.BatchFloat(args, "-utsSceneShadowDistance", shadowDistance, 0f);
             GameObject[] roots = scene.GetRootGameObjects();
             var model = OrbitRenderMatch.FindSceneObject(roots, OrbitRenderMatch.BatchArgument(args, "-matchModel"));
             var light = GetLight(roots, OrbitRenderMatch.BatchArgument(args, "-matchLight"));
@@ -57,7 +60,7 @@ internal static class UtsSampleScene
             foreach (var material in materials)
                 if (AssetDatabase.GetAssetPath(material.shader) == Package + "/Runtime/Shaders/UnityToon.shader")
                     material.EnableKeyword("UTS_RP_BUILTIN");
-            Debug.Log($"[UtsRender] UTS sample {relativeScene}: {model.name}, {materials.Length} scene materials, " +
+            Debug.Log($"[UtsRender] Scene {relativeScene}: {model.name}, {materials.Length} scene materials, " +
                 $"lights: {string.Join(", ", additional.Prepend(light).Select(item => item.name))}.");
 
             string pose = OrbitRenderMatch.BatchArgument(args, "-utsSamplePose", false);
@@ -72,12 +75,28 @@ internal static class UtsSampleScene
                 try { AnimationMode.SampleAnimationClip(model, clip, time); }
                 finally { AnimationMode.EndSampling(); }
             }
-            var cameras = UtsRender.CreateReferenceCameras(model, args, PosedBounds(model));
-            foreach (var camera in cameras) camera.renderingPath = RenderingPath.Forward;
+            var referencePaths = ReadList(args, "-matchRefCameras");
+            Camera[] cameras;
+            if (referencePaths.Length == 0)
+            {
+                cameras = UtsRender.CreateReferenceCameras(model, args, PosedBounds(model));
+                foreach (var camera in cameras) camera.renderingPath = RenderingPath.Forward;
+            }
+            else
+            {
+                cameras = referencePaths.Select(path =>
+                {
+                    Camera camera = OrbitRenderMatch.FindSceneObject(roots, path).GetComponent<Camera>();
+                    if (camera == null) throw new ArgumentException($"No Camera component at {path}.");
+                    camera.aspect = 1f;
+                    return camera;
+                }).ToArray();
+            }
             OrbitRenderMatch.RenderPreparedModel(model, light, args, cameras, additional);
         }
         finally
         {
+            QualitySettings.shadowDistance = shadowDistance;
             if (AnimationMode.InAnimationMode()) AnimationMode.StopAnimationMode();
             if (staged != null)
             {

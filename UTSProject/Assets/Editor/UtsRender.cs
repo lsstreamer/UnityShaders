@@ -25,10 +25,11 @@ public static class UtsRender
             throw new InvalidOperationException($"The Unity Toon Shader failed to load: {ToonShader}");
 
         string[] args = Environment.GetCommandLineArgs();
-        string sample = OrbitRenderMatch.BatchArgument(args, "-utsSampleScene", false);
-        if (sample != null)
+        string scene = OrbitRenderMatch.BatchArgument(args, "-utsProjectScene", false)
+            ?? OrbitRenderMatch.BatchArgument(args, "-utsSampleScene", false);
+        if (scene != null)
         {
-            UtsSampleScene.Render(sample, args);
+            UtsSampleScene.Render(scene, args);
             return;
         }
         string source = Path.GetFullPath(OrbitRenderMatch.BatchArgument(args, "-matchGlb"));
