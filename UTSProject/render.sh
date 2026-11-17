@@ -15,6 +15,7 @@ die() { printf '%s\n' "$*" >&2; exit 1; }
 
 if [[ ${1:-} == -h || ${1:-} == --help ]]; then
   printf 'Usage: %s [model ... | --all]\nDefault models: %s\nShared settings: %s/configs/render_config.sh\nModel settings: %s/<model>/{camera,light,shader}.sh\n' "$0" "${default_models[*]}" "$project" "$model_settings_dir"
+  printf 'Sample settings: %s/<model>/{scene,camera,light}.sh\n' "$sample_settings_dir"
   exit 0
 fi
 (( EUID != 0 )) || die 'Run as the ordinary user that activated Unity.'
@@ -57,19 +58,24 @@ if (( $# == 0 )); then
 elif [[ $1 == --all && $# == 1 ]]; then
   shopt -s nullglob
   models=()
-  for folder in "$model_settings_dir"/*/; do
+  for folder in "$model_settings_dir"/*/ "$sample_settings_dir"/*/; do
     folder=${folder%/}
     name=${folder##*/}
     models+=("$name")
   done
-  (( ${#models[@]} )) || die "No model settings in $model_settings_dir"
+  (( ${#models[@]} )) || die "No settings in $model_settings_dir or $sample_settings_dir"
 fi
 (( ${#models[@]} )) || die 'Set default_models or pass one or more model names.'
 
 for model in "${models[@]}"; do
   [[ $model =~ ^[[:alnum:]_][[:alnum:]_-]*$ ]] || die "Invalid model name: $model"
-  input="$model_root/$model/$model.glb"
-  [[ -r $input ]] || die "Missing input: $input"
+  if [[ -d $sample_settings_dir/$model ]]; then
+    [[ ! -d $model_settings_dir/$model ]] || die "$model has both sample and GLB settings"
+    [[ -r $sample_settings_dir/$model/scene.sh ]] || die "$model: missing sample scene.sh"
+  else
+    input="$model_root/$model/$model.glb"
+    [[ -r $input ]] || die "Missing input: $input"
+  fi
 done
 
 exec 9>"$project/.render.lock"
@@ -89,6 +95,9 @@ for index in "${!models[@]}"; do (
   log="$logs/$model.log"
   defaults="$project/configs/defaults"
   model_settings="$model_settings_dir/$model"
+  if [[ -d $sample_settings_dir/$model ]]; then
+    model_settings="$sample_settings_dir/$model"
+  fi
   render_refs_only=false
   material_overrides=()
   for section in camera light shader; do
@@ -103,6 +112,27 @@ for index in "${!models[@]}"; do (
     false) ;;
     *) die "$model: render_refs_only must be true or false." ;;
   esac
+  if [[ $model_settings == "$sample_settings_dir/$model" ]]; then
+    source "$model_settings/scene.sh"
+    input_args=(
+      -utsSampleScene "$sample_scene" -matchModel "$sample_model" -matchLight "$scene_light"
+    )
+    if [[ -n ${sample_dependencies:-} ]]; then input_args+=(-utsSampleDependencies "$sample_dependencies"); fi
+    if [[ -n ${sample_hide:-} ]]; then input_args+=(-utsSampleHide "$sample_hide"); fi
+    if [[ -n ${sample_pose_clip:-} ]]; then
+      input_args+=(-utsSamplePose "$sample_pose_clip" -utsSamplePoseTime "${sample_pose_time:-0}")
+    fi
+    if [[ -n ${scene_additional_lights:-} ]]; then
+      input_args+=(-utsAdditionalLights "$scene_additional_lights")
+    fi
+  else
+    input_args=(
+      -matchGlb "$model_root/$model/$model.glb"
+      -utsLightPitch "$light_pitch" -utsLightYaw "$light_yaw" -utsLightIntensity "$light_intensity" -utsLightColor "$light_color"
+      -utsBaseStep "$toon_base_step" -utsShadeStep "$toon_shade_step"
+      -utsBaseFeather "$toon_base_feather" -utsShadeFeather "$toon_shade_feather" -utsOutlineWidth "$outline_width"
+    )
+  fi
   printf '\n[%d/%d] %s | GPU %s | %s\n' "$((index + 1))" "${#models[@]}" "$model" "$gpu" "$output_root/$model"
   if [[ -d $model_settings ]]; then
     printf 'Model settings: %s\n' "$model_settings"
@@ -114,13 +144,10 @@ for index in "${!models[@]}"; do (
   if xvfb-run -a -s '-screen 0 1024x768x24 -nolisten tcp' \
     "$unity_editor" -batchmode -quit -force-vulkan -force-device-index "$gpu" \
     -projectPath "$project" -executeMethod UtsRender.Run \
-    -matchGlb "$model_root/$model/$model.glb" \
+    "${input_args[@]}" \
     -matchAxes '(-x,+y,+z)' "${render_args[@]}" \
     -matchRefAzimuths "$reference_azimuths" -matchRefElevation "$reference_elevation" -matchFrameFill "$frame_fill" \
     -matchOrbitDirection "$orbit_direction" \
-    -utsLightPitch "$light_pitch" -utsLightYaw "$light_yaw" -utsLightIntensity "$light_intensity" -utsLightColor "$light_color" \
-    -utsBaseStep "$toon_base_step" -utsShadeStep "$toon_shade_step" \
-    -utsBaseFeather "$toon_base_feather" -utsShadeFeather "$toon_shade_feather" -utsOutlineWidth "$outline_width" \
     "${model_render_args[@]}" "${material_overrides[@]}" \
     -matchOutput "$output_root/$model" -logFile - 2>&1 | tee "$log" | show_progress; then
     exit 0

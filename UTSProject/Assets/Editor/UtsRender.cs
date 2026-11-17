@@ -25,6 +25,12 @@ public static class UtsRender
             throw new InvalidOperationException($"The Unity Toon Shader failed to load: {ToonShader}");
 
         string[] args = Environment.GetCommandLineArgs();
+        string sample = OrbitRenderMatch.BatchArgument(args, "-utsSampleScene", false);
+        if (sample != null)
+        {
+            UtsSampleScene.Render(sample, args);
+            return;
+        }
         string source = Path.GetFullPath(OrbitRenderMatch.BatchArgument(args, "-matchGlb"));
         bool replay = OrbitRenderMatch.BatchArgument(args, "-matchCameras", false) != null;
         var toon = (
@@ -119,15 +125,20 @@ public static class UtsRender
         }
     }
 
-    static Camera[] CreateReferenceCameras(GameObject model, string[] args)
+    internal static Camera[] CreateReferenceCameras(GameObject model, string[] args, Bounds? posedBounds = null)
     {
         string[] azimuths = (OrbitRenderMatch.BatchArgument(args, "-matchRefAzimuths", false) ?? "30,210").Split(',');
         float elevation = OrbitRenderMatch.BatchFloat(args, "-matchRefElevation", 15f, -90f, 90f);
         if (Mathf.Abs(elevation) >= 90f) throw new ArgumentException("-matchRefElevation must be between -90 and 90 (exclusive).");
         float fill = OrbitRenderMatch.BatchFloat(args, "-matchFrameFill", 0.9f, float.Epsilon, 1f);
-        Renderer[] renderers = model.GetComponentsInChildren<Renderer>();
-        Bounds bounds = renderers[0].bounds;
-        foreach (Renderer renderer in renderers) bounds.Encapsulate(renderer.bounds);
+        Bounds bounds;
+        if (posedBounds.HasValue) bounds = posedBounds.Value;
+        else
+        {
+            Renderer[] renderers = model.GetComponentsInChildren<Renderer>();
+            bounds = renderers[0].bounds;
+            foreach (Renderer renderer in renderers) bounds.Encapsulate(renderer.bounds);
+        }
         float radius = bounds.extents.magnitude;
         if (radius <= 0f) throw new InvalidOperationException("The model has zero size.");
 
@@ -152,8 +163,8 @@ public static class UtsRender
             camera.orthographic = true;
             camera.aspect = 1f;
             camera.orthographicSize = halfSize;
-            camera.nearClipPlane = radius;
-            camera.farClipPlane = 5f * radius;
+            camera.nearClipPlane = (posedBounds.HasValue ? 0.75f : 1f) * radius;
+            camera.farClipPlane = (posedBounds.HasValue ? 6f : 5f) * radius;
             refs[index] = camera;
         }
         return refs;

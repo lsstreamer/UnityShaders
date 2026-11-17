@@ -1,6 +1,6 @@
 # UTSProject 渲染使用说明
 
-本工程用 Unity 6000.3.24f1、Built-in 渲染管线和 Vulkan 从 GLB 生成参考图、两套环绕、几何遮罩及相机 JSON。批处理会在临时场景中导入 GLB，根据模型边界自动摆放相机，并使用模型配置中的灯光和材质。
+本工程用 Unity 6000.3.24f1、Built-in 渲染管线和 Vulkan 生成参考图、两套环绕、几何遮罩及相机 JSON。批处理支持导入 GLB 和加载 UTS 官方示例场景，两种输入共用相机和导出流程。
 
 ## 启动渲染
 
@@ -21,7 +21,8 @@ bash render.sh house
 | --- | --- |
 | `bash render.sh` | 渲染公共配置中的 `default_models`，当前是 `house`。 |
 | `bash render.sh house` | 渲染指定模型。可传入多个模型名，按顺序执行。 |
-| `bash render.sh --all` | 渲染 `configs/models/` 中有配置目录的模型。 |
+| `bash render.sh unitychan_cel_look` | 渲染 UTS 官方示例，保留原场景材质、主灯和面部灯。 |
+| `bash render.sh --all` | 渲染 `configs/val_models/` 和 `configs/samples/` 中配置的模型。 |
 | `bash render.sh --help` | 查看启动用法和配置位置。 |
 
 [render.sh](render.sh) 负责加载配置并启动 Unity。Unity 的批处理入口是 `UtsRender.Run`，负责导入模型、设置材质、相机和灯光。`OrbitRenderMatch` 负责渲染和导出。[UtsRender.cs](Assets/Editor/UtsRender.cs) · [OrbitRenderMatch.cs](Assets/Editor/OrbitRenderMatch.cs)
@@ -62,7 +63,7 @@ house/
 | 配置 | 当前值或用途 |
 | --- | --- |
 | `model_root`、`output_root` | GLB 输入根目录和渲染输出根目录。 |
-| `default_models`、`model_settings_dir` | 默认模型列表和模型配置目录。 |
+| `default_models`、`model_settings_dir`、`sample_settings_dir` | 默认模型列表、GLB 配置目录和官方示例配置目录。 |
 | `gpu` | Vulkan 设备编号，当前是 `7`。 |
 | `frame_count` | 每套环绕的帧数，默认 `120`。完整运行共生成 `240` 张环绕成图。 |
 | `resolution` | 正方形 PNG 的边长，默认 `1024`。 |
@@ -81,11 +82,19 @@ SHADERNPR_UTS_FRAMES=8 SHADERNPR_UTS_OUTPUT_ROOT=/tmp/uts-preview bash render.sh
 
 ## 每个模型的设置
 
-把模型专用配置放在 `configs/models/<模型名>/`，目录名与 GLB 文件名对应。按类别编辑 `camera.sh`、`light.sh` 和 `shader.sh`。启动时先加载该类别的默认值，再应用模型文件中的设置。可以只填写要调整的参数。[模型默认值](configs/defaults) · [house 配置](configs/models/house)
+把 GLB 的专用配置放在 `configs/val_models/<模型名>/`，目录名与 GLB 文件名对应。按类别编辑 `camera.sh`、`light.sh` 和 `shader.sh`。启动时先加载该类别的默认值，再应用模型文件中的设置。可以只填写要调整的参数。[模型默认值](configs/defaults) · [house 配置](configs/val_models/house)
+
+### UTS 官方示例
+
+每个示例在 `configs/samples/<模型名>/` 下有同样的 `camera.sh` 和 `light.sh`，另用 `scene.sh` 指定输入。Unity 从已安装的 UTS 包加载场景、模型、原材质和贴图。[UnityChan CelLook 配置](configs/samples/unitychan_cel_look)
+
+- `scene.sh` 指定场景、模型节点、要隐藏的舞台物件和动画采样时间。UTS 包内的示例使用相对于 Built-in 示例目录的路径，依赖临时导入后清理。独立发布的官方角色（如 Jack 和夏制服 Misaki）使用 `Assets/UTSOfficialCharacters/` 下的项目场景，沿用角色包的原材质。
+- `camera.sh` 设置参考角度和相机参数。当前用正面和背面做两张参考图，并从正面开启两套环绕。只出参考图时设 `render_refs_only=true`。
+- `light.sh` 指定主灯和逗号分隔的附加灯层级路径。参考图和 `camera_only` 使用场景中各灯的设定。`bounding_sphere` 同步旋转选中的所有灯。UnityChan 使用官方主灯和面部灯。导出的相机轨迹以主灯方向作为 Python 单灯评估的输入。
 
 ### 相机和参考图
 
-在相机配置中调整参考视角、取景和环绕方向。[camera.sh](configs/models/house/camera.sh)
+在相机配置中调整参考视角、取景和环绕方向。[camera.sh](configs/val_models/house/camera.sh)
 
 ```bash
 render_refs_only=false
@@ -103,7 +112,7 @@ orbit_direction=increasing
 
 ### 灯光
 
-在灯光配置中调整主方向光。`light_pitch` 和 `light_yaw` 分别设置方向光的 X、Y 轴旋转角度，单位为度。[light.sh](configs/models/house/light.sh)
+在 GLB 的灯光配置中调整主方向光。`light_pitch` 和 `light_yaw` 分别设置方向光的 X、Y 轴旋转角度，单位为度。[light.sh](configs/val_models/house/light.sh)
 
 ```bash
 light_pitch=40
@@ -116,7 +125,7 @@ light_color='#FFFFFF'
 
 ### UTS Shader 和分块材质
 
-默认材质使用 Unity Toon Shader，并保留 GLB 的底色贴图和色调。在模型的 Shader 配置里调整默认 UTS 材质。[shader.sh](configs/models/house/shader.sh)
+GLB 模型的默认材质使用 Unity Toon Shader，并保留 GLB 的底色贴图和色调。在模型的 Shader 配置里调整默认 UTS 材质。[shader.sh](configs/val_models/house/shader.sh)
 
 | 配置 | 作用 |
 | --- | --- |

@@ -5,7 +5,8 @@
 default_models=(house)
 model_root="$workspace/shaderNPR/glb/val_data"
 output_root="$workspace/shaderNPR/comparison/unity/UTS"
-model_settings_dir="$project/configs/models"
+model_settings_dir="$project/configs/val_models"
+sample_settings_dir="$project/configs/samples"
 gpu=7
 unity_editor="$workspace/Unity/6000.3.24f1/Editor/Unity"
 unity_lib="$workspace/Unity/runtime-ubuntu24.04/usr/lib/x86_64-linux-gnu"

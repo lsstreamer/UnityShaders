@@ -24,3 +24,9 @@
 /.render.lock
 /Assets/__ShaderNprInput.glb
 /Assets/__ShaderNprInput.glb.meta
+/Assets/__UtsRenderSample_*/
+/Assets/__UtsRenderSample_*.meta
+
+# Downloaded third-party assets kept outside version control
+/Assets/UTSOfficialCharacters/
+*.unitypackage

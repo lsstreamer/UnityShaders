@@ -41,6 +41,7 @@ public class OrbitRenderMatch : EditorWindow
     [SerializeField] LightingMode lightingMode = LightingMode.SceneLights;
     [SerializeField] Light pythonLight;
     [SerializeField] Light sceneLight;
+    [NonSerialized] Light[] sceneAdditionalLights = Array.Empty<Light>();
     [SerializeField] string camerasJsonPath = "";
     [SerializeField] string referenceJsonPath = "";
     [SerializeField] string outputDir = "";
@@ -90,7 +91,8 @@ public class OrbitRenderMatch : EditorWindow
         RenderPreparedModel(root, sceneLight, args, sceneRefs);
     }
 
-    internal static void RenderPreparedModel(GameObject root, Light sceneLight, string[] args, Camera[] sceneRefs = null)
+    internal static void RenderPreparedModel(GameObject root, Light sceneLight, string[] args, Camera[] sceneRefs = null,
+        Light[] additionalLights = null)
     {
         var tool = CreateInstance<OrbitRenderMatch>();
         try
@@ -141,6 +143,7 @@ public class OrbitRenderMatch : EditorWindow
             }
 
             tool.sceneLight = sceneLight;
+            tool.sceneAdditionalLights = additionalLights ?? Array.Empty<Light>();
             tool.lightingMode = sceneLight != null ? LightingMode.SceneLights : LightingMode.PythonLight;
 
             if (!tool.RenderOutputs()) throw new InvalidOperationException(tool.status);
@@ -185,7 +188,7 @@ public class OrbitRenderMatch : EditorWindow
         return color;
     }
 
-    static GameObject FindSceneObject(GameObject[] roots, string path)
+    internal static GameObject FindSceneObject(GameObject[] roots, string path)
     {
         string[] names = path.Trim('/').Split(new[] { '/' }, 2);
         var matching = roots.Where(root => root.name == names[0]).ToArray();
@@ -650,7 +653,7 @@ public class OrbitRenderMatch : EditorWindow
     void ApplySceneLight(FrameData frame = null)
     {
         if (sceneLight == null) throw new Exception("Assign the Scene light to use for this render.");
-        if (lightingState == null) lightingState = LightingState.Capture(sceneLight, false);
+        if (lightingState == null) lightingState = LightingState.Capture(sceneLight, false, sceneAdditionalLights);
         Vector3 pivot = alignment != null && model != null ? ToWorldPoint(Vector3.zero) : Vector3.zero;
         lightingState.ApplyPose(LightOrbitRotation(frame), pivot);
         sceneLight.enabled = true;
@@ -675,11 +678,12 @@ public class OrbitRenderMatch : EditorWindow
         Quaternion rotation;
         Vector3 position;
         readonly List<Light> disabled = new List<Light>();
+        (Light light, bool enabled, Vector3 position, Quaternion rotation)[] additional;
         bool ambientSaved;
         UnityEngine.Rendering.AmbientMode ambientMode;
         Color ambientLight;
 
-        public static LightingState Capture(Light light, bool ambient)
+        public static LightingState Capture(Light light, bool ambient, Light[] additional = null)
         {
             var state = new LightingState
             {
@@ -693,10 +697,12 @@ public class OrbitRenderMatch : EditorWindow
                 cullingMask = light.cullingMask,
                 rotation = light.transform.rotation,
                 position = light.transform.position,
+                additional = (additional ?? Array.Empty<Light>())
+                    .Select(item => (item, item.enabled, item.transform.position, item.transform.rotation)).ToArray(),
             };
             foreach (Light other in FindObjectsByType<Light>(FindObjectsSortMode.None))
             {
-                if (other == light || !other.enabled) continue;
+                if (other == light || !other.enabled || state.additional.Any(item => item.light == other)) continue;
                 other.enabled = false;
                 state.disabled.Add(other);
             }
@@ -712,12 +718,24 @@ public class OrbitRenderMatch : EditorWindow
         public void ApplyPose(Quaternion orbitRotation, Vector3 pivot)
         {
             light.transform.SetPositionAndRotation(pivot + orbitRotation * (position - pivot), orbitRotation * rotation);
+            foreach (var item in additional)
+            {
+                item.light.transform.SetPositionAndRotation(
+                    pivot + orbitRotation * (item.position - pivot), orbitRotation * item.rotation);
+                item.light.enabled = true;
+            }
         }
 
         public void Restore()
         {
             foreach (Light other in disabled)
                 if (other != null) other.enabled = true;
+            foreach (var item in additional)
+            {
+                if (item.light == null) continue;
+                item.light.transform.SetPositionAndRotation(item.position, item.rotation);
+                item.light.enabled = item.enabled;
+            }
             if (ambientSaved)
             {
                 RenderSettings.ambientMode = ambientMode;
@@ -1611,6 +1629,7 @@ public class OrbitRenderMatch : EditorWindow
             $"  \"reference_only\": {(renderRefsOnly ? "true" : "false")},",
             $"  \"completed\": {(completed ? "true" : "false")},",
             $"  \"scene_light\": {(lightingMode == LightingMode.SceneLights ? "\"" + Escape(sceneLight.name) + "\"" : "null")},",
+            $"  \"scene_additional_lights\": [{string.Join(", ", sceneAdditionalLights.Select(item => "\"" + Escape(item.name) + "\""))}],",
             $"  \"custom_start_offset_deg\": {(frameSource != FrameSource.CamerasJson && !renderRefsOnly ? Fmt(customStartOffsetDeg) : "null")},",
             $"  \"custom_direction\": {(frameSource != FrameSource.CamerasJson && !renderRefsOnly ? customDirection.ToString(CultureInfo.InvariantCulture) : "null")},",
             $"  \"light_intensity\": {Fmt(lightingMode == LightingMode.PythonLight ? data.Light.Intensity : sceneLight.intensity)},",
