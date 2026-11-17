@@ -29,4 +29,5 @@
 
 # Downloaded third-party assets kept outside version control
 /Assets/UTSOfficialCharacters/
+/Assets/UTSOfficialCharacters.meta
 *.unitypackage
