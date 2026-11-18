@@ -96,9 +96,12 @@ for index in "${!models[@]}"; do (
   log="$logs/$model.log"
   defaults="$project/configs/defaults"
   model_settings="$model_settings_dir/$model"
+  data_group=val
   if [[ -d $sample_settings_dir/$model ]]; then
     model_settings="$sample_settings_dir/$model"
+    data_group=artist
   fi
+  model_output="$output_root/$data_group/$model"
   render_refs_only=false
   material_overrides=()
   for section in camera light shader; do
@@ -144,7 +147,7 @@ for index in "${!models[@]}"; do (
       -utsBaseFeather "$toon_base_feather" -utsShadeFeather "$toon_shade_feather" -utsOutlineWidth "$outline_width"
     )
   fi
-  printf '\n[%d/%d] %s | GPU %s | %s\n' "$((index + 1))" "${#models[@]}" "$model" "$gpu" "$output_root/$model"
+  printf '\n[%d/%d] %s | %s | GPU %s | %s\n' "$((index + 1))" "${#models[@]}" "$model" "$data_group" "$gpu" "$model_output"
   if [[ -d $model_settings ]]; then
     printf 'Model settings: %s\n' "$model_settings"
   else
@@ -160,7 +163,7 @@ for index in "${!models[@]}"; do (
     -matchRefAzimuths "$reference_azimuths" -matchRefElevation "$reference_elevation" -matchFrameFill "$frame_fill" \
     -matchOrbitDirection "$orbit_direction" \
     "${model_render_args[@]}" "${material_overrides[@]}" \
-    -matchOutput "$output_root/$model" -logFile - 2>&1 | tee "$log" | show_progress; then
+    -matchOutput "$model_output" -logFile - 2>&1 | tee "$log" | show_progress; then
     exit 0
   else
     rc=$?

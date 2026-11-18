@@ -22,6 +22,7 @@ bash render.sh house
 | `bash render.sh` | 渲染公共配置中的 `default_models`，当前是 `house`。 |
 | `bash render.sh house` | 渲染指定模型。可传入多个模型名，按顺序执行。 |
 | `bash render.sh unitychan_cel_look` | 渲染 UTS 官方示例，保留原场景材质、主灯和面部灯。 |
+| `bash render.sh unitychan_illust` | 用正交相机和官方单方向光渲染 UTS 插画版的正面和背面参考图。 |
 | `bash render.sh --all` | 渲染 `configs/val_models/` 和 `configs/samples/` 中配置的模型。 |
 | `bash render.sh --help` | 查看启动用法和配置位置。 |
 
@@ -31,10 +32,10 @@ bash render.sh house
 
 | 项目 | 容器内默认路径 |
 | --- | --- |
-| GLB 根目录 | `/workspace/shaderNPR/glb/val_data` |
-| `house` 的 GLB | `/workspace/shaderNPR/glb/val_data/house/house.glb` |
-| 渲染输出根目录 | `/workspace/shaderNPR/comparison/unity/UTS` |
-| `house` 的渲染结果 | `/workspace/shaderNPR/comparison/unity/UTS/house` |
+| GLB 根目录 | `/workspace/shaderNPR/glb/val` |
+| `house` 的 GLB | `/workspace/shaderNPR/glb/val/house/house.glb` |
+| 渲染输出根目录 | `/workspace/shaderNPR/comparison/unity` |
+| `house` 的渲染结果 | `/workspace/shaderNPR/comparison/unity/val/house` |
 | 完整日志 | 启动时显示的 `/tmp/shadernpr-uts.XXXXXXXX/house.log` |
 
 输入按 `<model_root>/<模型名>/<模型名>.glb` 放置，批处理以 GLB 文件为单位导入。导出模型时把需要的贴图嵌入 GLB。完整渲染完成后，模型输出目录包含以下文件。
@@ -62,7 +63,7 @@ house/
 
 | 配置 | 当前值或用途 |
 | --- | --- |
-| `model_root`、`output_root` | GLB 输入根目录和渲染输出根目录。 |
+| `model_root`、`output_root` | val 数据的 GLB 输入根目录和 Unity 渲染输出根目录；结果按 `val`、`artist` 自动分组。 |
 | `default_models`、`model_settings_dir`、`sample_settings_dir` | 默认模型列表、GLB 配置目录和官方示例配置目录。 |
 | `gpu` | Vulkan 设备编号，当前是 `7`。 |
 | `frame_count` | 每套环绕的帧数，默认 `120`。完整运行共生成 `240` 张环绕成图。 |

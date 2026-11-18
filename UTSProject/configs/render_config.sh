@@ -3,8 +3,8 @@
 
 # 输入按 <model_root>/<模型名>/<模型名>.glb 存放。
 default_models=(house)
-model_root="$workspace/shaderNPR/glb/UTS"
-output_root="$workspace/shaderNPR/comparison/unity/UTS/artist"
+model_root="$workspace/shaderNPR/glb/val"
+output_root="$workspace/shaderNPR/comparison/unity"
 model_settings_dir="$project/configs/val_models"
 sample_settings_dir="$project/configs/samples"
 gpu=7
