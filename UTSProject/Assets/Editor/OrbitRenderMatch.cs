@@ -1275,7 +1275,7 @@ public class OrbitRenderMatch : EditorWindow
                     {
                         if (skinned.sharedMesh == null) continue;
                         baked = new Mesh { indexFormat = skinned.sharedMesh.indexFormat };
-                        skinned.BakeMesh(baked, false);
+                        skinned.BakeMesh(baked, true);
                         source = baked;
                     }
                     else if (renderer is MeshRenderer)
@@ -1716,7 +1716,7 @@ public class OrbitRenderMatch : EditorWindow
                 var baked = new Mesh();
                 try
                 {
-                    skinned.BakeMesh(baked);
+                    skinned.BakeMesh(baked, true);
                     Matrix4x4 matrix = toRoot * skinned.transform.localToWorldMatrix;
                     foreach (Vector3 vertex in baked.vertices) yield return matrix.MultiplyPoint3x4(vertex);
                 }

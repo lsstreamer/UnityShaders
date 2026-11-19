@@ -3,6 +3,9 @@
     "com.unity.cloud.gltfast": "6.21.0",
     "com.unity.toonshader": "0.16.1-preview",
     "com.unity.modules.imageconversion": "1.0.0",
-    "com.unity.modules.unitywebrequesttexture": "1.0.0"
+    "com.unity.modules.unitywebrequesttexture": "1.0.0",
+    "com.vrmc.gltf": "file:com.vrmc.gltf",
+    "com.vrmc.univrm": "file:com.vrmc.univrm",
+    "com.unity.render-pipelines.universal": "17.3.0"
   }
 }

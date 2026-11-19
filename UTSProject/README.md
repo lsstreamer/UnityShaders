@@ -145,3 +145,26 @@ material_overrides+=(
 ```
 
 Renderer 路径相对于导入的模型根节点，用 `/` 连接各级节点名。材质槽从 `0` 开始编号。同一模型可以添加多条绑定，每个槽使用指定 `.mat` 的 Shader 和参数。成功绑定后，启动日志会列出 Renderer 路径、槽位和 Shader 名称。
+
+## Chop Chop 单角色对比
+
+`Assets/ChopChop/` 保存官方角色、原材质及卡通 Shader；使用现有 Unity 6000.3.24f1 和 URP 17.3。预览包含九种角色，保留半透明角色并在每个角色的 `*-settings.json` 中列出透明材质。每种角色输出相同相机下的 Base Color 和官方 Shader 图片，只有一盏强度为 1 的白色方向光，无后处理。
+
+在已激活 Unity 的普通用户容器中运行：
+
+```bash
+cd /workspace/UnityProjects/UTSProject
+CHOPCHOP_GPU=7 bash render_chopchop.sh
+```
+
+结果位于 `Comparison/ChopChop/`；可用 `CHOPCHOP_OUTPUT` 指定输出目录。入口为 `Assets/Editor/ChopChopPreview.cs`。批处理临时启用专用 URP 配置，结束后恢复原有管线和全局灯光设置。编辑器打开 `Assets/ChopChop/PreviewScenes/` 的场景时，可在 `Tools > Chop Chop` 中启用预览 URP，查看完恢复 Built-in。来源及对比方法见 `Assets/ChopChop/SOURCE.md`。
+
+只生成参考图时，使用现有预览场景的正面构图和对应背面相机，复用 `OrbitRenderMatch` 导出透明 PNG、参考相机 JSON 及几何遮罩，不保存场景修改，也不生成环绕帧：
+
+```bash
+CHOPCHOP_REFS_ONLY=1 CHOPCHOP_OUTPUT=/workspace/tmp/chopchop_refs bash render_chopchop.sh
+```
+
+默认包含除 `SlimeCritter` 外的八个角色，每个角色输出到 `<output>/<角色名>/ref/`，`view0.png` 为正面，`view1.png` 为背面。灯光沿用各角色预览场景的方向，白色方向光强度默认为 `1.6`、环境光为 `0.2`；可用 `CHOPCHOP_LIGHT_INTENSITY`、`CHOPCHOP_AMBIENT_INTENSITY` 调整。`CHOPCHOP_NAMES` 可指定逗号分隔的角色名。每个角色的 `settings.json` 记录本次灯光、相机和材质设置。
+
+确认参考图后，设置 `CHOPCHOP_GROUND_TRUTH=1` 生成正式环绕数据。默认每套环绕 120 帧，可用 `CHOPCHOP_FRAME_COUNT` 调整。

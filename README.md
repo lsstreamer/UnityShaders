@@ -4,6 +4,7 @@
 
 - Unity Editor：`6000.3.24f1`
 - 项目目录：`UTSProject/`
+- Toon RP 候选工程：`ToonRPProject/`
 - 渲染脚本和配置：`UTSProject/render.sh`、`UTSProject/configs/`
 
 ## 获取项目
@@ -14,6 +15,10 @@ cd UnityProjects/UTSProject
 ```
 
 用 Unity Hub 安装并打开 `6000.3.24f1`，选择 `UTSProject/`。首次打开时，Unity 会按照 `Packages/manifest.json` 和 `Packages/packages-lock.json` 自动下载 Unity Toon Shader、glTFast 等包；`Library/`、`Temp/`、`Logs/` 和 `UserSettings/` 是本地生成目录，不需要从仓库下载。
+
+`ToonRPProject/` 是调研文档中第一个免费候选 `Delt06/toon-rp` 的独立工程。它原本声明 Unity 2022.3 / Core RP 14.0.9；已在不更换现有 `6000.3.24f1` 编辑器的前提下完成 Unity 6 适配，并保留上游 13 个示例场景、模型和材质。详细打开方式及验证结果见 [ToonRPProject/README.md](ToonRPProject/README.md)。
+
+两个工程的外部包、素材来源和候选选型见 [TOON-NPR.md](TOON-NPR.md)。
 
 ## 下载外部角色包
 

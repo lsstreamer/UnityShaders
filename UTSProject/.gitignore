@@ -31,3 +31,12 @@
 /Assets/UTSOfficialCharacters/
 /Assets/UTSOfficialCharacters.meta
 *.unitypackage
+
+# Embedded packages for the Chop Chop GLB exporter
+/Packages/com.vrmc.gltf/
+/Packages/com.vrmc.univrm/
+
+# Chop Chop upstream character and shader assets
+/Assets/ChopChop/
+/Assets/ChopChop.meta
+/Comparison/ChopChop/
