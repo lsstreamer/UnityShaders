@@ -1,0 +1,613 @@
+{
+    "model": "Arisa",
+    "unity": "6000.3.24f1",
+    "urp": "17.3.0",
+    "upstreamCommit": "6981f7dc931b53a0bd797725f4dac30b824041d7",
+    "sourceScene": "Assets/Scenes/SceneArisa.unity",
+    "previewScene": "Assets/ComparisonTools/Scenes/Round2/Arisa.unity",
+    "pipeline": "Assets/ComparisonTools/Settings/ComparisonPipeline.asset",
+    "colorSpace": "Linear",
+    "sourceModel": "Assets/Graphics/_External Assets/ArisaNew/Arisa.fbx",
+    "sourceHierarchy": "Arisa",
+    "round": "Round2",
+    "twoBand": false,
+    "onlyTwoBandSwitchChanged": true,
+    "pose": {
+        "method": "bundled_humanoid_retarget",
+        "asset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+        "clip": "m_idle_A",
+        "notes": "Bundled animation sampled once; root transform preserved; identical static pose for both images.",
+        "timeSeconds": 1.2000000476837159
+    },
+    "baseline": "Unlit original _BaseMap * _BaseColor, optional RGB vertex color; same UV transform, alpha clipping, blend, culling and depth write; no lighting, shadows, fog, emission or post-processing.",
+    "notes": "Round 2: Arisa uses male idle for a neutral non-crossed stance and retains all original shader parameters. Other characters only disable _RampTriple/_RAMP_TRIPLE on separate material assets; thresholds, smoothness, colors, highlights, fur, lights and poses retained. White dance reference robot excluded. Base Color uses original source materials. Camera reframed; non-model renderers, volumes, post-processing and fog disabled. Dedicated URP 17 Forward renderer, 4096 main shadow map, one cascade.",
+    "ambientMode": "Flat",
+    "skybox": "Resources/unity_builtin_extra",
+    "resolution": 1024,
+    "supersampling": 2,
+    "msaa": 8,
+    "originalMaterialsUnchanged": true,
+    "orthographicSize": 0.94598388671875,
+    "ambientIntensity": 0.800000011920929,
+    "cameraPosition": {
+        "x": 0.8492556810379028,
+        "y": 1.3147380352020264,
+        "z": 5.132094860076904
+    },
+    "cameraRotation": {
+        "x": 5.639337062835693,
+        "y": 189.09027099609376,
+        "z": -2.6810180742131707e-8
+    },
+    "boundsCenter": {
+        "x": 0.01766270399093628,
+        "y": 0.7949923872947693,
+        "z": -0.0653616338968277
+    },
+    "boundsSize": {
+        "x": 0.5675792694091797,
+        "y": 1.6284207105636597,
+        "z": 0.3666863441467285
+    },
+    "background": {
+        "r": 0.9098039269447327,
+        "g": 0.9098039269447327,
+        "b": 0.9098039269447327,
+        "a": 1.0
+    },
+    "ambientLight": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+    },
+    "materials": [
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_Hair_00_HAIR.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_Hair_00_HAIR.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_Hair_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_Hair_00_HAIR\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ANISO_SPECULAR\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_NORMALMAP\",\"_RAMP_TRIPLE\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"e8d7b8474cc2140488b2be80ca1cb997\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"242c120c4e80b074f94b478d240fda23\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"e8d7b8474cc2140488b2be80ca1cb997\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":1.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.12800000607967378},{\"first\":\"_FresnelThickness\",\"second\":0.5410000085830689},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.5},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.5},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":129.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.3009999990463257},{\"first\":\"_SpecularThreshold\",\"second\":1.0},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":0.14351193606853486,\"g\":0.15645356476306916,\"b\":0.23584908246994019,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.14351193606853486,\"g\":0.15645356476306916,\"b\":0.23584908246994019,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.43921568989753725}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.3333333432674408}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ANISO_SPECULAR",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_NORMALMAP",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 0.14351189136505128,
+                "g": 0.15645352005958558,
+                "b": 0.2358490526676178,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceMouth_00_FACE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceMouth_00_FACE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_FaceMouth_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_FaceMouth_00_FACE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"0e40cc96d50a49444be0652badc82d08\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"0e40cc96d50a49444be0652badc82d08\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 0.800000011920929,
+                "g": 0.800000011920929,
+                "b": 0.800000011920929,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeWhite_00_EYE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeWhite_00_EYE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_EyeWhite_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_EyeWhite_00_EYE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_RAMP_TRIPLE\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"ca4ef28fb4f624d43a30a81cc3b6147d\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"ca4ef28fb4f624d43a30a81cc3b6147d\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":0.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyeline_00_FACE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyeline_00_FACE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_FaceEyeline_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_FaceEyeline_00_FACE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\",\"_SPECULAR\",\"_SURFACE_TYPE_TRANSPARENT\"],\"m_InvalidKeywords\":[],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":3000,\"stringTagMap\":{\"RenderType\":\"Transparent\"},\"disabledShaderPasses\":[\"SHADOWCASTER\"],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"d111cc31c1893d641986f3fd1a60d403\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"d111cc31c1893d641986f3fd1a60d403\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":10.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":2.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":5.0},{\"first\":\"_Surface\",\"second\":1.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":0.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_SURFACE_TYPE_TRANSPARENT"
+            ],
+            "baseColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 3000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyelash_00_FACE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyelash_00_FACE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_FaceEyelash_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_FaceEyelash_00_FACE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\",\"_SPECULAR\",\"_SURFACE_TYPE_TRANSPARENT\"],\"m_InvalidKeywords\":[],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":3000,\"stringTagMap\":{\"RenderType\":\"Transparent\"},\"disabledShaderPasses\":[\"SHADOWCASTER\"],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"0983121ff98f02246a02d181c794aacf\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"0983121ff98f02246a02d181c794aacf\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":10.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":2.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":5.0},{\"first\":\"_Surface\",\"second\":1.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":0.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_SURFACE_TYPE_TRANSPARENT"
+            ],
+            "baseColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 3000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceBrow_00_FACE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceBrow_00_FACE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_FaceBrow_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_FaceBrow_00_FACE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\",\"_SPECULAR\",\"_SURFACE_TYPE_TRANSPARENT\"],\"m_InvalidKeywords\":[],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":3000,\"stringTagMap\":{\"RenderType\":\"Transparent\"},\"disabledShaderPasses\":[\"SHADOWCASTER\"],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"38fcc58d639358e4788c35e7a2519602\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"38fcc58d639358e4788c35e7a2519602\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":10.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":2.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":5.0},{\"first\":\"_Surface\",\"second\":1.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":0.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_SURFACE_TYPE_TRANSPARENT"
+            ],
+            "baseColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 3000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeIris_00_EYE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeIris_00_EYE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_EyeIris_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_EyeIris_00_EYE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\",\"_SPECULAR\",\"_SURFACE_TYPE_TRANSPARENT\"],\"m_InvalidKeywords\":[],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":3000,\"stringTagMap\":{\"RenderType\":\"Transparent\"},\"disabledShaderPasses\":[\"SHADOWCASTER\"],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"94c3548bd3fe24341b8eb24705c73db7\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"94c3548bd3fe24341b8eb24705c73db7\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":10.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":2.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":5.0},{\"first\":\"_Surface\",\"second\":1.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":0.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_SURFACE_TYPE_TRANSPARENT"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 3000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeHighlight_00_EYE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeHighlight_00_EYE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_EyeHighlight_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_EyeHighlight_00_EYE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\",\"_SPECULAR\",\"_SURFACE_TYPE_TRANSPARENT\"],\"m_InvalidKeywords\":[],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":3000,\"stringTagMap\":{\"RenderType\":\"Transparent\"},\"disabledShaderPasses\":[\"SHADOWCASTER\"],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"2df519c47dcb5ad4fac2dcb613cde6e6\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"2df519c47dcb5ad4fac2dcb613cde6e6\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":10.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":2.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":5.0},{\"first\":\"_Surface\",\"second\":1.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":0.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_SURFACE_TYPE_TRANSPARENT"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 3000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_Face_00_SKIN.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_Face_00_SKIN.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_Face_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_Face_00_SKIN\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_NORMALMAP\",\"_RAMP_TRIPLE\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"b2fa4495aea000c4cb4e9cad8c09d7bb\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"31847b45690dac84fbda89d53a9f3a22\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"b2fa4495aea000c4cb4e9cad8c09d7bb\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_NORMALMAP",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeExtra_01_EYE.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeExtra_01_EYE.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_00_EyeExtra_01.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_00_EyeExtra_01_EYE\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"591d327efb309064baeabe30526178de\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"591d327efb309064baeabe30526178de\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Body_00_SKIN.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Body_00_SKIN.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_001_01_Body_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_001_01_Body_00_SKIN\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_NORMALMAP\",\"_RAMP_TRIPLE\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"d5f3b223db8f5d649b08e08f2a6f3eca\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"5db03418104181341aa61d32cacdd881\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"d5f3b223db8f5d649b08e08f2a6f3eca\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.1080000028014183},{\"first\":\"_FresnelThickness\",\"second\":0.5410000085830689},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.43921568989753725}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_NORMALMAP",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Tops_01_CLOTH.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Tops_01_CLOTH.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_001_01_Tops_01.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_001_01_Tops_01_CLOTH\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"ced941749139e2c4dab723618e0ff147\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"ced941749139e2c4dab723618e0ff147\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.09600000083446503},{\"first\":\"_FresnelThickness\",\"second\":0.6990000009536743},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":0.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.43921568989753725}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Bottoms_01_CLOTH.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Bottoms_01_CLOTH.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_001_01_Bottoms_01.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_001_01_Bottoms_01_CLOTH\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"531a2b4b0119dc04ca1faaa75396e115\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"531a2b4b0119dc04ca1faaa75396e115\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.09600000083446503},{\"first\":\"_FresnelThickness\",\"second\":0.6990000009536743},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":0.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.43921568989753725}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Shoes_01_CLOTH.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Shoes_01_CLOTH.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_001_01_Shoes_01.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_001_01_Shoes_01_CLOTH\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_RAMP_TRIPLE\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"7c5a529ac735bd248babab7963f42db9\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"7c5a529ac735bd248babab7963f42db9\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.09600000083446503},{\"first\":\"_FresnelThickness\",\"second\":0.6990000009536743},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.0},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":0.0},{\"first\":\"_SpecularExponent\",\"second\":200.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.800000011920929,\"g\":0.800000011920929,\"b\":0.800000011920929,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.43921568989753725}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_RAMP_TRIPLE",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_HairBack_00_HAIR.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_HairBack_00_HAIR.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/ArisaNew/Texture/F00_000_HairBack_00.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"F00_000_HairBack_00_HAIR\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ALPHATEST_ON\",\"_ANISO_SPECULAR\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_NORMALMAP\",\"_RAMP_TRIPLE\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ALPHACLIP_ON\",\"_METALLICSPECGLOSSMAP\",\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2450,\"stringTagMap\":{\"RenderType\":\"TransparentCutout\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"87e9dfefd41ec914280b9ca7c34f106b\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"895445044da670843adcc51fe846c753\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"87e9dfefd41ec914280b9ca7c34f106b\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_Matcap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"895445044da670843adcc51fe846c753\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":1.0},{\"first\":\"_AnisoSpecular\",\"second\":1.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnableMatcap\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.12800000607967378},{\"first\":\"_FresnelThickness\",\"second\":0.5410000085830689},{\"first\":\"_GlossMapScale\",\"second\":1.0},{\"first\":\"_Glossiness\",\"second\":0.5},{\"first\":\"_GlossyReflections\",\"second\":1.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":1.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.5009999871253967},{\"first\":\"_Ramp1\",\"second\":0.9279999732971191},{\"first\":\"_RampSmoothness\",\"second\":0.035999998450279239},{\"first\":\"_RampTriple\",\"second\":1.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.5},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":129.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.3009999990463257},{\"first\":\"_SpecularThreshold\",\"second\":1.0},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":0.14509804546833039,\"g\":0.1568627506494522,\"b\":0.23529411852359773,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":0.14509804546833039,\"g\":0.1568627506494522,\"b\":0.23529411852359773,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.43921568989753725}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.3333333432674408}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ALPHATEST_ON",
+                "_ANISO_SPECULAR",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_NORMALMAP",
+                "_RAMP_TRIPLE",
+                "_SPECULAR",
+                "_ALPHACLIP_ON",
+                "_METALLICSPECGLOSSMAP",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 0.1450980007648468,
+                "g": 0.15686270594596864,
+                "b": 0.23529407382011414,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "ramp0": 0.5009999871253967,
+            "ramp1": 0.9279999732971191,
+            "rampSmoothness": 0.035999998450279239,
+            "rampTriple": 1.0,
+            "renderQueue": 2450
+        }
+    ],
+    "renderers": [
+        {
+            "path": "Body",
+            "materials": [
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_Hair_00_HAIR.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceMouth_00_FACE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeWhite_00_EYE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyeline_00_FACE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyelash_00_FACE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceBrow_00_FACE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeIris_00_EYE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeHighlight_00_EYE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_Face_00_SKIN.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeExtra_01_EYE.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Body_00_SKIN.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Tops_01_CLOTH.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Bottoms_01_CLOTH.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Shoes_01_CLOTH.mat",
+                "Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_HairBack_00_HAIR.mat"
+            ]
+        }
+    ],
+    "lights": [
+        {
+            "name": "Directional Light",
+            "type": "Directional",
+            "shadows": "Soft",
+            "enabled": true,
+            "position": {
+                "x": -2.0,
+                "y": 8.0,
+                "z": 24.43000030517578
+            },
+            "rotation": {
+                "x": 39.0694465637207,
+                "y": 165.58763122558595,
+                "z": 182.8275909423828
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "intensity": 0.6000000238418579
+        }
+    ]
+}

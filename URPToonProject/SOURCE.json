@@ -1,0 +1,52 @@
+{
+  "repository": "https://github.com/Delt06/urp-toon-shader",
+  "commit": "6981f7dc931b53a0bd797725f4dac30b824041d7",
+  "archive_url": "https://codeload.github.com/Delt06/urp-toon-shader/zip/6981f7dc931b53a0bd797725f4dac30b824041d7",
+  "archive_sha256": "60903cf57df92fdb5609c3350156ae40270a7395446293b80de55f5c3833b2f5",
+  "imported_date": "2026-11-19",
+  "unity": "6000.3.24f1",
+  "urp": "17.3.0",
+  "project_settings_source": "Unity 6000.3.24f1 bundled Universal 3D template com.unity.template.3d-cross-platform-17.0.14.tgz",
+  "character_inventory": "Comparison/character_inventory.json",
+  "latest_round": {
+    "name": "Round2",
+    "character_inventory": "Comparison/Round2/character_inventory.json",
+    "character_count": 9,
+    "rendered_image_count": 18,
+    "image": "Comparison/Round2/all_characters_comparison.png",
+    "resolution": [6240, 3384],
+    "excluded": ["ReferenceRobot"],
+    "arisa_pose": {"clip": "m_idle_A", "time_seconds": 1.2},
+    "arisa_shader_parameters_changed": false,
+    "other_characters": "Only _RampTriple=0 and _RAMP_TRIPLE disabled; all other material parameters, poses, cameras and lights retained.",
+    "other_basecolor_images_byte_identical_to_first_round": 8,
+    "source_material_files_checked": 64,
+    "source_material_files_changed": 0
+  },
+  "all_characters_comparison": {
+    "character_count": 10,
+    "rendered_image_count": 20,
+    "image": "Comparison/all_characters_comparison.png",
+    "resolution": [4168, 5624],
+    "compatible_animation_sampled_count": 9,
+    "original_pose_preserved": ["SupercyanMale"],
+    "source_material_files_checked": 64,
+    "source_material_files_changed": 0,
+    "source_material_hashes": "Comparison/material_source_hashes.json",
+    "reference_robot_shader": "Universal Render Pipeline/Lit"
+  },
+  "initial_models": [
+    {
+      "name": "Arisa",
+      "scene": "Assets/Scenes/SceneArisa.unity",
+      "original_material_count": 15,
+      "material_files_byte_identical_to_upstream_after_render": true
+    },
+    {
+      "name": "Warrior",
+      "scene": "Assets/Scenes/Warrior.unity",
+      "original_material_count": 1,
+      "material_files_byte_identical_to_upstream_after_render": true
+    }
+  ]
+}

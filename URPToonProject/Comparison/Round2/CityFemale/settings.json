@@ -1,0 +1,327 @@
+{
+    "model": "CityFemale",
+    "unity": "6000.3.24f1",
+    "urp": "17.3.0",
+    "upstreamCommit": "6981f7dc931b53a0bd797725f4dac30b824041d7",
+    "sourceScene": "Assets/Scenes/TinyToonyCityDemo.unity",
+    "previewScene": "Assets/ComparisonTools/Scenes/Round2/CityFemale.unity",
+    "pipeline": "Assets/ComparisonTools/Settings/ComparisonPipeline.asset",
+    "colorSpace": "Linear",
+    "sourceModel": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_female.FBX",
+    "sourceHierarchy": "Characters/TT_demo_female",
+    "round": "Round2",
+    "twoBand": true,
+    "onlyTwoBandSwitchChanged": true,
+    "pose": {
+        "method": "bundled_humanoid_retarget",
+        "asset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/female/f_idle_A.FBX",
+        "clip": "f_idle_A",
+        "notes": "Bundled animation sampled once; root transform preserved; identical static pose for both images.",
+        "timeSeconds": 1.2000000476837159
+    },
+    "baseline": "Unlit original _BaseMap * _BaseColor, optional RGB vertex color; same UV transform, alpha clipping, blend, culling and depth write; no lighting, shadows, fog, emission or post-processing.",
+    "notes": "Round 2: Arisa uses male idle for a neutral non-crossed stance and retains all original shader parameters. Other characters only disable _RampTriple/_RAMP_TRIPLE on separate material assets; thresholds, smoothness, colors, highlights, fur, lights and poses retained. White dance reference robot excluded. Base Color uses original source materials. Camera reframed; non-model renderers, volumes, post-processing and fog disabled. Dedicated URP 17 Forward renderer, 4096 main shadow map, one cascade.",
+    "ambientMode": "Flat",
+    "skybox": "Resources/unity_builtin_extra",
+    "resolution": 1024,
+    "supersampling": 2,
+    "msaa": 8,
+    "originalMaterialsUnchanged": true,
+    "orthographicSize": 1.0422871112823487,
+    "ambientIntensity": 3.130000114440918,
+    "cameraPosition": {
+        "x": 1.1089284420013428,
+        "y": 1.7235066890716553,
+        "z": 6.741872787475586
+    },
+    "cameraRotation": {
+        "x": 5.639337062835693,
+        "y": 189.09027099609376,
+        "z": 0.0
+    },
+    "boundsCenter": {
+        "x": 0.043717026710510257,
+        "y": 1.0577495098114014,
+        "z": 0.08430081605911255
+    },
+    "boundsSize": {
+        "x": 1.0402592420578004,
+        "y": 1.728079080581665,
+        "z": 1.0157424211502076
+    },
+    "background": {
+        "r": 0.9098039269447327,
+        "g": 0.9098039269447327,
+        "b": 0.9098039269447327,
+        "a": 1.0
+    },
+    "ambientLight": {
+        "r": 0.14116966724395753,
+        "g": 0.11665073037147522,
+        "b": 0.12259471416473389,
+        "a": 1.0
+    },
+    "materials": [
+        {
+            "path": "Assets/ComparisonTools/Materials/Round2/CityFemale/TT_demo.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo_texture.tga",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"TT_demo (Two Band)\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_FRESNEL\",\"_PURE_SHADOW_COLOR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":6,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":-1,\"stringTagMap\":{},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"a80a727671e675149954421e86769a91\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"a80a727671e675149954421e86769a91\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_FresnelThickness\",\"second\":0.6489999890327454},{\"first\":\"_Glossiness\",\"second\":0.5},{\"first\":\"_GlossinessSource\",\"second\":0.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_Mode\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.019999999552965165},{\"first\":\"_PureShadowColor\",\"second\":1.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.26499998569488528},{\"first\":\"_Ramp1\",\"second\":0.5419999957084656},{\"first\":\"_RampSmoothness\",\"second\":0.017000000923871995},{\"first\":\"_RampTriple\",\"second\":0.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Shininess\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.5},{\"first\":\"_SmoothnessSource\",\"second\":0.0},{\"first\":\"_SpecSource\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":0.0},{\"first\":\"_SpecularExponent\",\"second\":14.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.02500000037252903},{\"first\":\"_SpecularThreshold\",\"second\":0.38499999046325686},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UVSec\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":0.12339800596237183,\"g\":0.14775928854942323,\"b\":0.4433962106704712,\"a\":0.3176470696926117}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.18039216101169587,\"g\":0.007843137718737126,\"b\":0.03921568766236305,\"a\":0.5686274766921997}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.5,\"g\":0.5,\"b\":0.5,\"a\":0.5}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":0.2823529541492462}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_FRESNEL",
+                "_PURE_SHADOW_COLOR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.18039211630821229,
+                "g": 0.007843137718737126,
+                "b": 0.03921568766236305,
+                "a": 0.5686274766921997
+            },
+            "ramp0": 0.26499998569488528,
+            "ramp1": 0.5419999957084656,
+            "rampSmoothness": 0.017000000923871995,
+            "rampTriple": 0.0,
+            "renderQueue": 2000
+        }
+    ],
+    "renderers": [
+        {
+            "path": "Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 Head/HEAD_CONTAINER/f_head_07",
+            "materials": [
+                "Assets/ComparisonTools/Materials/Round2/CityFemale/TT_demo.mat"
+            ]
+        },
+        {
+            "path": "Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/R_hand_container/w_knife",
+            "materials": [
+                "Assets/ComparisonTools/Materials/Round2/CityFemale/TT_demo.mat"
+            ]
+        },
+        {
+            "path": "f_body_18_black_dress",
+            "materials": [
+                "Assets/ComparisonTools/Materials/Round2/CityFemale/TT_demo.mat"
+            ]
+        }
+    ],
+    "lights": [
+        {
+            "name": "Point Light (6)",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -6.406063079833984,
+                "y": 3.4688408374786379,
+                "z": 2.2924489974975588
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9905660152435303,
+                "g": 0.710165798664093,
+                "b": 0.39716091752052309,
+                "a": 1.0
+            },
+            "intensity": 0.9800000190734863
+        },
+        {
+            "name": "Point Light (7)",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -9.556063652038575,
+                "y": 6.11884069442749,
+                "z": -13.217550277709961
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9803921580314636,
+                "g": 0.7577394247055054,
+                "b": 0.3647058606147766,
+                "a": 1.0
+            },
+            "intensity": 5.349999904632568
+        },
+        {
+            "name": "Point Light (2)",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -5.436063766479492,
+                "y": 4.928840637207031,
+                "z": -1.0475506782531739
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9803921580314636,
+                "g": 0.6749715209007263,
+                "b": 0.3647058606147766,
+                "a": 1.0
+            },
+            "intensity": 1.4700000286102296
+        },
+        {
+            "name": "Point Light",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -14.540063858032227,
+                "y": 3.313840866088867,
+                "z": 1.0804486274719239
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9811320900917053,
+                "g": 0.8208398222923279,
+                "b": 0.3656105399131775,
+                "a": 1.0
+            },
+            "intensity": 0.8199999928474426
+        },
+        {
+            "name": "Point Light (5)",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -21.781063079833986,
+                "y": 3.1738409996032717,
+                "z": 0.6624488830566406
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.6481879949569702,
+                "b": 0.2594339847564697,
+                "a": 1.0
+            },
+            "intensity": 2.0
+        },
+        {
+            "name": "Directional Light",
+            "type": "Directional",
+            "shadows": "Hard",
+            "enabled": true,
+            "position": {
+                "x": 0.0,
+                "y": 6.320000171661377,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 31.46549415588379,
+                "y": 218.10841369628907,
+                "z": 307.62335205078127
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.9141122698783875,
+                "b": 0.7688679099082947,
+                "a": 1.0
+            },
+            "intensity": 1.059999942779541
+        },
+        {
+            "name": "Point Light (3)",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -26.37606430053711,
+                "y": 6.408840656280518,
+                "z": -2.1375508308410646
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9803921580314636,
+                "g": 0.6749715209007263,
+                "b": 0.3647058606147766,
+                "a": 1.0
+            },
+            "intensity": 2.430000066757202
+        },
+        {
+            "name": "Point Light (4)",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -33.806060791015628,
+                "y": 10.728840827941895,
+                "z": -0.797551155090332
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9803921580314636,
+                "g": 0.6749715209007263,
+                "b": 0.3647058606147766,
+                "a": 1.0
+            },
+            "intensity": 2.430000066757202
+        },
+        {
+            "name": "Point Light (1)",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -9.81606388092041,
+                "y": 6.138840675354004,
+                "z": -2.5175509452819826
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9811320900917053,
+                "g": 0.8208398222923279,
+                "b": 0.3656105399131775,
+                "a": 1.0
+            },
+            "intensity": 1.2999999523162842
+        }
+    ]
+}

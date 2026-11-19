@@ -1,0 +1,101 @@
+{
+  "Arisa": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 0.977453867594401,
+    "material_count": 15,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": false,
+    "only_two_band_switch_changed": true
+  },
+  "Warrior": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 1.5974756876627605,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  },
+  "Mike": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 5.064221382141113,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  },
+  "CrazyCat": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 7.206587155659993,
+    "material_count": 2,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  },
+  "SupercyanMale": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 2.719431241353353,
+    "material_count": 2,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  },
+  "CityFemale": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.51448122660319,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  },
+  "CityMaleA": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.2279478708903,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  },
+  "CityMaleB": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.204104741414388,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  },
+  "CityPolice": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 3.461797078450521,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true,
+    "two_band": true,
+    "only_two_band_switch_changed": true
+  }
+}

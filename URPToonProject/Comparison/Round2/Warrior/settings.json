@@ -1,0 +1,171 @@
+{
+    "model": "Warrior",
+    "unity": "6000.3.24f1",
+    "urp": "17.3.0",
+    "upstreamCommit": "6981f7dc931b53a0bd797725f4dac30b824041d7",
+    "sourceScene": "Assets/Scenes/Warrior.unity",
+    "previewScene": "Assets/ComparisonTools/Scenes/Round2/Warrior.unity",
+    "pipeline": "Assets/ComparisonTools/Settings/ComparisonPipeline.asset",
+    "colorSpace": "Linear",
+    "sourceModel": "Assets/Graphics/_External Assets/RPG Characters - Nov 2020/Warrior.fbx",
+    "sourceHierarchy": "Warrior",
+    "round": "Round2",
+    "twoBand": true,
+    "onlyTwoBandSwitchChanged": true,
+    "pose": {
+        "method": "bundled_humanoid_retarget",
+        "asset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+        "clip": "m_idle_A",
+        "notes": "Bundled animation sampled once; root transform preserved; identical static pose for both images.",
+        "timeSeconds": 1.2000000476837159
+    },
+    "baseline": "Unlit original _BaseMap * _BaseColor, optional RGB vertex color; same UV transform, alpha clipping, blend, culling and depth write; no lighting, shadows, fog, emission or post-processing.",
+    "notes": "Round 2: Arisa uses male idle for a neutral non-crossed stance and retains all original shader parameters. Other characters only disable _RampTriple/_RAMP_TRIPLE on separate material assets; thresholds, smoothness, colors, highlights, fur, lights and poses retained. White dance reference robot excluded. Base Color uses original source materials. Camera reframed; non-model renderers, volumes, post-processing and fog disabled. Dedicated URP 17 Forward renderer, 4096 main shadow map, one cascade.",
+    "ambientMode": "Flat",
+    "skybox": "Resources/unity_builtin_extra",
+    "resolution": 1024,
+    "supersampling": 2,
+    "msaa": 8,
+    "originalMaterialsUnchanged": true,
+    "orthographicSize": 1.7535152435302735,
+    "ambientIntensity": 1.0,
+    "cameraPosition": {
+        "x": 1.7114381790161133,
+        "y": 2.5255749225616457,
+        "z": 10.394379615783692
+    },
+    "cameraRotation": {
+        "x": 5.639336585998535,
+        "y": 189.09027099609376,
+        "z": -8.04305457791088e-8
+    },
+    "boundsCenter": {
+        "x": 0.014740407466888428,
+        "y": 1.4651387929916382,
+        "z": -0.20998191833496095
+    },
+    "boundsSize": {
+        "x": 1.647151231765747,
+        "y": 2.9567086696624758,
+        "z": 1.2183167934417725
+    },
+    "background": {
+        "r": 0.9098039269447327,
+        "g": 0.9098039269447327,
+        "b": 0.9098039269447327,
+        "a": 1.0
+    },
+    "ambientLight": {
+        "r": 0.24528300762176515,
+        "g": 0.24528300762176515,
+        "b": 0.24528300762176515,
+        "a": 1.0
+    },
+    "materials": [
+        {
+            "path": "Assets/ComparisonTools/Materials/Round2/Warrior/Warrior.mat",
+            "sourcePath": "Assets/Graphics/_External Assets/RPG Characters - Nov 2020/Warrior.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/RPG Characters - Nov 2020/Warrior_Texture.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"Warrior (Two Band)\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ENVIRONMENT_LIGHTING_ENABLED\",\"_FOG\",\"_PURE_SHADOW_COLOR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":-1,\"stringTagMap\":{},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"907b421bcfc91a341a42dc4429163920\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":1.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":1.0},{\"first\":\"_Fresnel\",\"second\":0.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.6700000166893005},{\"first\":\"_FresnelThickness\",\"second\":0.640999972820282},{\"first\":\"_GlossMapScale\",\"second\":0.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":0.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.004999999888241291},{\"first\":\"_PureShadowColor\",\"second\":1.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.23999999463558198},{\"first\":\"_Ramp1\",\"second\":0.44699999690055849},{\"first\":\"_RampSmoothness\",\"second\":0.029999999329447748},{\"first\":\"_RampTriple\",\"second\":0.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.5},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":0.0},{\"first\":\"_SpecularExponent\",\"second\":84.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.16899999976158143},{\"first\":\"_SpecularThreshold\",\"second\":0.38100001215934756},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.02480480447411537,\"g\":0.0,\"b\":0.40392157435417178,\"a\":0.5607843399047852}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ENVIRONMENT_LIGHTING_ENABLED",
+                "_FOG",
+                "_PURE_SHADOW_COLOR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.02480480447411537,
+                "g": 0.0,
+                "b": 0.40392154455184939,
+                "a": 0.5607843399047852
+            },
+            "ramp0": 0.23999999463558198,
+            "ramp1": 0.44699999690055849,
+            "rampSmoothness": 0.029999999329447748,
+            "rampTriple": 0.0,
+            "renderQueue": 2000
+        }
+    ],
+    "renderers": [
+        {
+            "path": "CharacterArmature/Root/Body/Hips/Abdomen/Torso/Neck/Head/Face",
+            "materials": [
+                "Assets/ComparisonTools/Materials/Round2/Warrior/Warrior.mat"
+            ]
+        },
+        {
+            "path": "CharacterArmature/Root/Body/Hips/Abdomen/Torso/Shoulder.L/UpperArm.L/ShoulderPad.L",
+            "materials": [
+                "Assets/ComparisonTools/Materials/Round2/Warrior/Warrior.mat"
+            ]
+        },
+        {
+            "path": "CharacterArmature/Root/Body/Hips/Abdomen/Torso/Shoulder.R/UpperArm.R/ShoulderPad.R",
+            "materials": [
+                "Assets/ComparisonTools/Materials/Round2/Warrior/Warrior.mat"
+            ]
+        },
+        {
+            "path": "Warrior_Body",
+            "materials": [
+                "Assets/ComparisonTools/Materials/Round2/Warrior/Warrior.mat"
+            ]
+        }
+    ],
+    "lights": [
+        {
+            "name": "Directional Light",
+            "type": "Directional",
+            "shadows": "Soft",
+            "enabled": true,
+            "position": {
+                "x": 0.0,
+                "y": 3.2200000286102297,
+                "z": 4.050000190734863
+            },
+            "rotation": {
+                "x": 25.463228225708009,
+                "y": 161.88565063476563,
+                "z": 213.15948486328126
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "intensity": 1.0
+        },
+        {
+            "name": "Point Light",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": 0.7699999809265137,
+                "y": 2.369999885559082,
+                "z": 1.4500000476837159
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.5588884949684143,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "intensity": 1.0
+        }
+    ]
+}

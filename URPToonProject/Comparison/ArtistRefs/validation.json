@@ -1,0 +1,224 @@
+{
+  "Arisa": {
+    "glb_bytes": 3782660,
+    "materials": 15,
+    "primitives": 15,
+    "vertices": 17199,
+    "triangles": 23081,
+    "embedded_images": 15,
+    "alpha_modes": [
+      "OPAQUE",
+      "OPAQUE",
+      "OPAQUE",
+      "BLEND",
+      "BLEND",
+      "BLEND",
+      "BLEND",
+      "BLEND",
+      "OPAQUE",
+      "OPAQUE",
+      "OPAQUE",
+      "OPAQUE",
+      "OPAQUE",
+      "OPAQUE",
+      "MASK"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.999423380586555,
+        "foreground_pixels": 114686
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9994052110612988,
+        "foreground_pixels": 114630
+      }
+    ]
+  },
+  "Warrior": {
+    "glb_bytes": 830792,
+    "materials": 1,
+    "primitives": 4,
+    "vertices": 5154,
+    "triangles": 4690,
+    "embedded_images": 1,
+    "alpha_modes": [
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9995043176541181,
+        "foreground_pixels": 191052
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9993679444205553,
+        "foreground_pixels": 195320
+      }
+    ]
+  },
+  "Mike": {
+    "glb_bytes": 2479832,
+    "materials": 1,
+    "primitives": 1,
+    "vertices": 5857,
+    "triangles": 6062,
+    "embedded_images": 1,
+    "alpha_modes": [
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9989806714665428,
+        "foreground_pixels": 235081
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9992332175306178,
+        "foreground_pixels": 235813
+      }
+    ]
+  },
+  "CrazyCat": {
+    "glb_bytes": 611368,
+    "materials": 1,
+    "primitives": 1,
+    "vertices": 1722,
+    "triangles": 2686,
+    "embedded_images": 1,
+    "alpha_modes": [
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9994530812897223,
+        "foreground_pixels": 188407
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9993861769582221,
+        "foreground_pixels": 186237
+      }
+    ]
+  },
+  "SupercyanMale": {
+    "glb_bytes": 681892,
+    "materials": 2,
+    "primitives": 2,
+    "vertices": 1072,
+    "triangles": 1528,
+    "embedded_images": 2,
+    "alpha_modes": [
+      "OPAQUE",
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9995866914651788,
+        "foreground_pixels": 151983
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9995769246516453,
+        "foreground_pixels": 148512
+      }
+    ]
+  },
+  "CityFemale": {
+    "glb_bytes": 65888,
+    "materials": 1,
+    "primitives": 3,
+    "vertices": 528,
+    "triangles": 478,
+    "embedded_images": 1,
+    "alpha_modes": [
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9996463448024094,
+        "foreground_pixels": 264439
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9996979570570446,
+        "foreground_pixels": 266367
+      }
+    ]
+  },
+  "CityMaleA": {
+    "glb_bytes": 63600,
+    "materials": 1,
+    "primitives": 3,
+    "vertices": 473,
+    "triangles": 433,
+    "embedded_images": 1,
+    "alpha_modes": [
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9994892601627012,
+        "foreground_pixels": 246344
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9994163104242025,
+        "foreground_pixels": 245076
+      }
+    ]
+  },
+  "CityMaleB": {
+    "glb_bytes": 57408,
+    "materials": 1,
+    "primitives": 2,
+    "vertices": 348,
+    "triangles": 334,
+    "embedded_images": 1,
+    "alpha_modes": [
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9994610311325438,
+        "foreground_pixels": 283780
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9993640756003979,
+        "foreground_pixels": 283359
+      }
+    ]
+  },
+  "CityPolice": {
+    "glb_bytes": 72744,
+    "materials": 1,
+    "primitives": 3,
+    "vertices": 723,
+    "triangles": 530,
+    "embedded_images": 1,
+    "alpha_modes": [
+      "OPAQUE"
+    ],
+    "views": [
+      {
+        "view": "view0.png",
+        "geometry_iou": 0.9996678247208751,
+        "foreground_pixels": 257617
+      },
+      {
+        "view": "view1.png",
+        "geometry_iou": 0.9996393386609973,
+        "foreground_pixels": 265175
+      }
+    ]
+  }
+}

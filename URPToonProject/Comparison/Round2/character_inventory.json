@@ -1,0 +1,415 @@
+{
+    "characters": [
+        {
+            "name": "Arisa",
+            "scene": "SceneArisa",
+            "hierarchy": "Arisa",
+            "modelAsset": "Assets/Graphics/_External Assets/ArisaNew/Arisa.fbx",
+            "animationAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+            "clip": "m_idle_A",
+            "time": 1.2000000476837159,
+            "instantiate": false
+        },
+        {
+            "name": "Warrior",
+            "scene": "Warrior",
+            "hierarchy": "Warrior",
+            "modelAsset": "Assets/Graphics/_External Assets/RPG Characters - Nov 2020/Warrior.fbx",
+            "animationAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+            "clip": "m_idle_A",
+            "time": 1.2000000476837159,
+            "instantiate": false
+        },
+        {
+            "name": "Mike",
+            "scene": "SampleScene",
+            "hierarchy": "Mike",
+            "modelAsset": "Assets/Graphics/_External Assets/Animated Mech Pack - March 2021/FBX/Mike.fbx",
+            "animationAsset": "",
+            "clip": "Idle",
+            "time": 0.6000000238418579,
+            "instantiate": false
+        },
+        {
+            "name": "CrazyCat",
+            "scene": "Fur",
+            "hierarchy": "Crazy_Cat",
+            "modelAsset": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Crazy_Cat.fbx",
+            "animationAsset": "",
+            "clip": "CatPos_8_NormalStance",
+            "time": 0.15000000596046449,
+            "instantiate": false
+        },
+        {
+            "name": "SupercyanMale",
+            "scene": "Forest",
+            "hierarchy": "MaleFree1",
+            "modelAsset": "Assets/Graphics/_External Assets/Supercyan Character Pack Free Sample/Models/free_male_1.FBX",
+            "animationAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+            "clip": "m_idle_A",
+            "time": 1.2000000476837159,
+            "instantiate": false
+        },
+        {
+            "name": "CityFemale",
+            "scene": "TinyToonyCityDemo",
+            "hierarchy": "Characters/TT_demo_female",
+            "modelAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_female.FBX",
+            "animationAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/female/f_idle_A.FBX",
+            "clip": "f_idle_A",
+            "time": 1.2000000476837159,
+            "instantiate": false
+        },
+        {
+            "name": "CityMaleA",
+            "scene": "TinyToonyCityDemo",
+            "hierarchy": "Characters/TT_demo_male_A",
+            "modelAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_male_A.FBX",
+            "animationAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+            "clip": "m_idle_A",
+            "time": 1.2000000476837159,
+            "instantiate": false
+        },
+        {
+            "name": "CityMaleB",
+            "scene": "TinyToonyCityDemo",
+            "hierarchy": "Characters/TT_demo_male_B",
+            "modelAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_male_B.FBX",
+            "animationAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+            "clip": "m_idle_A",
+            "time": 1.2000000476837159,
+            "instantiate": false
+        },
+        {
+            "name": "CityPolice",
+            "scene": "TinyToonyCityDemo",
+            "hierarchy": "Characters/TT_demo_police",
+            "modelAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_police.FBX",
+            "animationAsset": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/animation/male/m_idle_A.FBX",
+            "clip": "m_idle_A",
+            "time": 1.2000000476837159,
+            "instantiate": false
+        }
+    ],
+    "meshAssets": [
+        {
+            "path": "Assets/Graphics/_External Assets/Animated Mech Pack - March 2021/FBX/Mike.fbx",
+            "rendererCount": 1,
+            "clips": [
+                "Dance",
+                "Death",
+                "Hello",
+                "HitRecieve_1",
+                "HitRecieve_2",
+                "Idle",
+                "Jump",
+                "Kick",
+                "No",
+                "Pickup",
+                "Punch",
+                "RobotArmature|Dance",
+                "RobotArmature|Death",
+                "RobotArmature|Hello",
+                "RobotArmature|HitRecieve_1",
+                "RobotArmature|HitRecieve_2",
+                "RobotArmature|Idle",
+                "RobotArmature|Jump",
+                "RobotArmature|Kick",
+                "RobotArmature|No",
+                "RobotArmature|Pickup",
+                "RobotArmature|Punch",
+                "RobotArmature|Run",
+                "RobotArmature|Run_Holding",
+                "RobotArmature|Shoot",
+                "RobotArmature|SwordSlash",
+                "RobotArmature|Walk",
+                "RobotArmature|Walk_Holding",
+                "RobotArmature|Yes",
+                "Run",
+                "Run_Holding",
+                "Shoot",
+                "SwordSlash",
+                "Walk",
+                "Walk_Holding",
+                "Yes"
+            ],
+            "materials": [
+                "Mike_Texture | Universal Render Pipeline/Lit | Assets/Graphics/_External Assets/Animated Mech Pack - March 2021/FBX/Mike.fbx"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/ArisaNew/Arisa.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "F00_000_Hair_00_HAIR | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_Hair_00_HAIR.mat",
+                "F00_000_00_FaceMouth_00_FACE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceMouth_00_FACE.mat",
+                "F00_000_00_EyeWhite_00_EYE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeWhite_00_EYE.mat",
+                "F00_000_00_FaceEyeline_00_FACE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyeline_00_FACE.mat",
+                "F00_000_00_FaceEyelash_00_FACE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceEyelash_00_FACE.mat",
+                "F00_000_00_FaceBrow_00_FACE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_FaceBrow_00_FACE.mat",
+                "F00_000_00_EyeIris_00_EYE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeIris_00_EYE.mat",
+                "F00_000_00_EyeHighlight_00_EYE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeHighlight_00_EYE.mat",
+                "F00_000_00_Face_00_SKIN | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_Face_00_SKIN.mat",
+                "F00_000_00_EyeExtra_01_EYE | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_00_EyeExtra_01_EYE.mat",
+                "F00_001_01_Body_00_SKIN | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Body_00_SKIN.mat",
+                "F00_001_01_Tops_01_CLOTH | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Tops_01_CLOTH.mat",
+                "F00_001_01_Bottoms_01_CLOTH | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Bottoms_01_CLOTH.mat",
+                "F00_001_01_Shoes_01_CLOTH | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_001_01_Shoes_01_CLOTH.mat",
+                "F00_000_HairBack_00_HAIR | DELTation/Toon Shader | Assets/Graphics/_External Assets/ArisaNew/Material/F00_000_HairBack_00_HAIR.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/HumanShaderPack/HairShaderSimple/Meshes_Hair/Hair_Wig_Female_1A_example.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/HumanShaderPack/HairShaderSimple/Meshes_Hair/HairPlane.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/HumanShaderPack/HairShaderSimple/Meshes_Hair/Hairsphere 1.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/HumanShaderPack/HairShaderSimple/Meshes_Hair/Hairsphere 2.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/HumanShaderPack/HairShaderSimple/Meshes_Hair/Hairsphere.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Inguz Media Studio/The Beauty Medieval War Banners and PROPS/Meshs/Firewood01.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/RPG Characters - Nov 2020/Warrior.fbx",
+            "rendererCount": 4,
+            "clips": [],
+            "materials": [
+                "Warrior | DELTation/Toon Shader | Assets/Graphics/_External Assets/RPG Characters - Nov 2020/Warrior.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Crazy_Cat.fbx",
+            "rendererCount": 1,
+            "clips": [
+                "rig|Cat_Pos2",
+                "rig|CatPos_1",
+                "rig|CatPos_3",
+                "rig|CatPos_4",
+                "rig|CatPos_5",
+                "rig|CatPos_6",
+                "rig|CatPos_7",
+                "rig|CatPos_8_NormalStance"
+            ],
+            "materials": [
+                "No Name | Universal Render Pipeline/Lit | Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/No Name.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Stone/mesh/Mesh.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Default | Universal Render Pipeline/Lit | Assets/Graphics/_External Assets/Stone/mesh/Materials/Default.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Character Pack Free Sample/Models/free_male_1.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_large_1.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_large_1_meshCollider.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_medium_1.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Stone/forestpack_stone_medium_1_meshCollider.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Tree/Fir/forestpack_tree_fir_tall.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Tree/Fir/forestpack_tree_fir_tall_meshCollider.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Tree/Leaf/forestpack_tree_1_leaf_1.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Tree/Leaf/forestpack_tree_1_leaf_1_meshCollider.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Tree/Treestump/forestpack_tree_stump_1.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Supercyan Free Forest Sample/Models/Tree/Treestump/forestpack_tree_stump_1_meshCollider.FBX",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Lit | Universal Render Pipeline/Lit | Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Meshes/Car_B1.fbx",
+            "rendererCount": 5,
+            "clips": [],
+            "materials": [
+                "M_Cars | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Materials/M_Cars.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Meshes/Demo_Asphalt.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "M_City | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Materials/M_City.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Meshes/Demo_Block.fbx",
+            "rendererCount": 17,
+            "clips": [],
+            "materials": [
+                "M_City | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Materials/M_City.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Meshes/Demo_Crossing.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "M_City | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/Materials/M_City.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_female.FBX",
+            "rendererCount": 3,
+            "clips": [],
+            "materials": [
+                "TT_demo | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_male_A.FBX",
+            "rendererCount": 3,
+            "clips": [],
+            "materials": [
+                "TT_demo | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_male_B.FBX",
+            "rendererCount": 2,
+            "clips": [],
+            "materials": [
+                "TT_demo | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/TT_demo_police.FBX",
+            "rendererCount": 3,
+            "clips": [],
+            "materials": [
+                "TT_demo | DELTation/Toon Shader | Assets/Graphics/_External Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo.mat"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Ultimate RPG Items Pack - Aug 2019/Key2_SmoothedNormals.fbx",
+            "rendererCount": 1,
+            "clips": [],
+            "materials": [
+                "Brown | Universal Render Pipeline/Lit | Assets/Graphics/_External Assets/Ultimate RPG Items Pack - Aug 2019/Key2_SmoothedNormals.fbx"
+            ]
+        },
+        {
+            "path": "Assets/Graphics/Animations/Robot Hip Hop Dance.fbx",
+            "rendererCount": 1,
+            "clips": [
+                "Dance"
+            ],
+            "materials": [
+                "Robot | Universal Render Pipeline/Lit | Assets/Graphics/Animations/Robot Hip Hop Dance.fbx"
+            ]
+        }
+    ],
+    "notes": "Round 2 includes nine main sample characters. The white dance reference robot is excluded at the user's request; Mike is retained. Arisa changes pose; the other eight only switch to two-band diffuse shading."
+}

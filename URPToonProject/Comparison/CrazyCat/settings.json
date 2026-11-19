@@ -1,0 +1,168 @@
+{
+    "model": "CrazyCat",
+    "unity": "6000.3.24f1",
+    "urp": "17.3.0",
+    "upstreamCommit": "6981f7dc931b53a0bd797725f4dac30b824041d7",
+    "sourceScene": "Assets/Scenes/Fur.unity",
+    "previewScene": "Assets/ComparisonTools/Scenes/CrazyCat.unity",
+    "pipeline": "Assets/ComparisonTools/Settings/ComparisonPipeline.asset",
+    "colorSpace": "Linear",
+    "sourceModel": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Crazy_Cat.fbx",
+    "sourceHierarchy": "Crazy_Cat",
+    "pose": {
+        "method": "bundled_humanoid_animation",
+        "asset": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Crazy_Cat.fbx",
+        "clip": "rig|CatPos_8_NormalStance",
+        "notes": "Bundled animation sampled once; root transform preserved; identical static pose for both images.",
+        "timeSeconds": 0.15000000596046449
+    },
+    "baseline": "Unlit original _BaseMap * _BaseColor, optional RGB vertex color; same UV transform, alpha clipping, blend, culling and depth write; no lighting, shadows, fog, emission or post-processing.",
+    "notes": "Original scene material assignments and light transforms/colors/intensities retained. Bundled animation sampled and frozen when compatible; otherwise source pose retained. Camera reframed; non-model renderers, volumes, post-processing and fog disabled. Dedicated URP 17 Forward renderer, 4096 main shadow map, one cascade.",
+    "ambientMode": "Skybox",
+    "skybox": "Resources/unity_builtin_extra",
+    "resolution": 1024,
+    "supersampling": 2,
+    "msaa": 8,
+    "originalMaterialsUnchanged": true,
+    "orthographicSize": 1.3998202085494996,
+    "ambientIntensity": 1.0,
+    "cameraPosition": {
+        "x": -1.29367995262146,
+        "y": 1.949548363685608,
+        "z": -8.095499992370606
+    },
+    "cameraRotation": {
+        "x": 5.639336585998535,
+        "y": 9.090280532836914,
+        "z": -8.04305457791088e-8
+    },
+    "boundsCenter": {
+        "x": 0.0011033713817596436,
+        "y": 1.14030921459198,
+        "z": -0.003107994794845581
+    },
+    "boundsSize": {
+        "x": 0.938109815120697,
+        "y": 2.359273910522461,
+        "z": 1.0436114072799683
+    },
+    "background": {
+        "r": 0.9098039269447327,
+        "g": 0.9098039269447327,
+        "b": 0.9098039269447327,
+        "a": 1.0
+    },
+    "ambientLight": {
+        "r": 0.21199999749660493,
+        "g": 0.22699999809265138,
+        "b": 0.2590000033378601,
+        "a": 1.0
+    },
+    "materials": [
+        {
+            "path": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat.mat",
+            "shader": "DELTation/Toon Shader",
+            "texture": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Materials/CatGreyTexture.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"Cat\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"849dc4ff793a3f943ad21a3b6ee26456\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2000,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"f91550dd13ed2974ca601fa1b150f679\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_FurNoise\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"d92609ab04a926848b590ead995fc741\",\"type\":3},\"m_Scale\":{\"x\":5.0,\"y\":5.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"f91550dd13ed2974ca601fa1b150f679\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.46299999952316286},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":0.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":0.0},{\"first\":\"_Fresnel\",\"second\":0.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.10000000149011612},{\"first\":\"_FresnelThickness\",\"second\":0.44999998807907107},{\"first\":\"_FurLength\",\"second\":0.10000000149011612},{\"first\":\"_FurStep\",\"second\":0.10000000149011612},{\"first\":\"_GlossMapScale\",\"second\":0.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":0.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.004999999888241291},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.0},{\"first\":\"_Ramp1\",\"second\":0.5},{\"first\":\"_RampSmoothness\",\"second\":0.25},{\"first\":\"_RampTriple\",\"second\":0.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.5},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":7.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.9789999723434448},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.501960813999176}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":0.1411764770746231,\"g\":0.1411764770746231,\"b\":0.1411764770746231,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_SPECULAR",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.501960813999176
+            },
+            "ramp0": 0.0,
+            "ramp1": 0.5,
+            "rampSmoothness": 0.25,
+            "renderQueue": 2000
+        },
+        {
+            "path": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+            "shader": "DELTation/Custom/Toon Shader (Fur)",
+            "texture": "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Materials/CatGreyTexture.png",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"Cat_Fur\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"41ef1a853a684eb08c739807254fc8d6\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[\"_ADDITIONAL_LIGHTS_ENABLED\",\"_ALPHATEST_ON\",\"_FRESNEL\",\"_SPECULAR\"],\"m_InvalidKeywords\":[\"_ALPHACLIP_ON\",\"_ZWRITE_ON\"],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":true,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":2450,\"stringTagMap\":{\"RenderType\":\"TransparentCutout\"},\"disabledShaderPasses\":[],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"f91550dd13ed2974ca601fa1b150f679\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_FurMask\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"da4c797c812e7614788176e0439b81d9\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_FurNoise\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"d92609ab04a926848b590ead995fc741\",\"type\":3},\"m_Scale\":{\"x\":7.0,\"y\":7.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"fileID\":2800000,\"guid\":\"f91550dd13ed2974ca601fa1b150f679\",\"type\":3},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_RampMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AdditionalLights\",\"second\":1.0},{\"first\":\"_AdditionalLightsSpecular\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":1.0},{\"first\":\"_AnisoSpecular\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":0.0},{\"first\":\"_Cutoff\",\"second\":0.593999981880188},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_Emission\",\"second\":0.0},{\"first\":\"_EnvironmentLightingEnabled\",\"second\":0.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_Fog\",\"second\":0.0},{\"first\":\"_Fresnel\",\"second\":1.0},{\"first\":\"_FresnelSmoothness\",\"second\":0.5360000133514404},{\"first\":\"_FresnelThickness\",\"second\":0.42399999499320986},{\"first\":\"_FurLength\",\"second\":0.10000000149011612},{\"first\":\"_FurStep\",\"second\":0.10000000149011612},{\"first\":\"_GlossMapScale\",\"second\":0.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":0.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.004999999888241291},{\"first\":\"_PureShadowColor\",\"second\":0.0},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_Ramp0\",\"second\":0.0},{\"first\":\"_Ramp1\",\"second\":0.5},{\"first\":\"_RampSmoothness\",\"second\":0.25},{\"first\":\"_RampTriple\",\"second\":0.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_ReflectionBlend\",\"second\":0.5},{\"first\":\"_ReflectionProbes\",\"second\":0.0},{\"first\":\"_ReflectionSmoothness\",\"second\":0.5},{\"first\":\"_Reflections\",\"second\":0.0},{\"first\":\"_ShadowMask\",\"second\":0.0},{\"first\":\"_Smoothness\",\"second\":0.5},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_Specular\",\"second\":1.0},{\"first\":\"_SpecularExponent\",\"second\":7.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SpecularSmoothness\",\"second\":0.9789999723434448},{\"first\":\"_SpecularThreshold\",\"second\":0.800000011920929},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_UseRampMap\",\"second\":0.0},{\"first\":\"_VertexColor\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_FresnelColor\",\"second\":{\"r\":0.23584908246994019,\"g\":0.23584908246994019,\"b\":0.23584908246994019,\"a\":1.0}},{\"first\":\"_ShadowTint\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.501960813999176}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.20000000298023225,\"g\":0.20000000298023225,\"b\":0.20000000298023225,\"a\":1.0}},{\"first\":\"_SpecularColor\",\"second\":{\"r\":0.14150941371917725,\"g\":0.14150941371917725,\"b\":0.14150941371917725,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [
+                "_ADDITIONAL_LIGHTS_ENABLED",
+                "_ALPHATEST_ON",
+                "_FRESNEL",
+                "_SPECULAR",
+                "_ALPHACLIP_ON",
+                "_ZWRITE_ON"
+            ],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.501960813999176
+            },
+            "ramp0": 0.0,
+            "ramp1": 0.5,
+            "rampSmoothness": 0.25,
+            "renderQueue": 2450
+        }
+    ],
+    "renderers": [
+        {
+            "path": "Crazy_Cat",
+            "materials": [
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat",
+                "Assets/Graphics/_External Assets/Snowconesolid Assets/Crazy Cats Toon Pack/Mesh/Materials/Cat_Fur.mat"
+            ]
+        }
+    ],
+    "lights": [
+        {
+            "name": "Directional Light",
+            "type": "Directional",
+            "shadows": "Soft",
+            "enabled": true,
+            "position": {
+                "x": 0.0,
+                "y": 3.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 23.927452087402345,
+                "y": 330.0,
+                "z": -9.340457722828432e-7
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "intensity": 1.0
+        }
+    ]
+}

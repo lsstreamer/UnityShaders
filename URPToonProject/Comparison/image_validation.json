@@ -1,0 +1,92 @@
+{
+  "Arisa": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 0.9178546269734701,
+    "material_count": 15,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "Warrior": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 1.5948464075724285,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "Mike": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.638160069783528,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "CrazyCat": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 7.206587155659993,
+    "material_count": 2,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "SupercyanMale": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 2.9920263290405273,
+    "material_count": 2,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "CityFemale": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.9966427485148115,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "CityMaleA": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.532435417175293,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "CityMaleB": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.564344088236491,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "CityPolice": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 3.677448272705078,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true
+  },
+  "ReferenceRobot": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "mean_absolute_rgb_difference_0_255": 4.012295087178548,
+    "material_count": 1,
+    "original_materials_unchanged_during_comparison": true
+  }
+}

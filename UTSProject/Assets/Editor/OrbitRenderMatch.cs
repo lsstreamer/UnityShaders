@@ -1260,14 +1260,16 @@ public class OrbitRenderMatch : EditorWindow
         public Matrix4x4 transform;
     }
 
+    static IEnumerable<Renderer> VisibleGeometryRenderers(Transform root) =>
+        root.GetComponentsInChildren<Renderer>().Where(renderer => renderer.enabled && renderer.gameObject.activeInHierarchy);
+
     List<GeometryDraw> GeometryDraws()
     {
         var draws = new List<GeometryDraw>();
         try
         {
-            foreach (var renderer in model.GetComponentsInChildren<UnityEngine.Renderer>())
+            foreach (var renderer in VisibleGeometryRenderers(model.transform))
             {
-                if (!renderer.enabled || !renderer.gameObject.activeInHierarchy) continue;
                 Mesh source = null, baked = null;
                 try
                 {
@@ -1704,23 +1706,29 @@ public class OrbitRenderMatch : EditorWindow
         static IEnumerable<Vector3> LocalVertices(Transform root)
         {
             Matrix4x4 toRoot = root.worldToLocalMatrix;
-            foreach (var filter in root.GetComponentsInChildren<MeshFilter>(true))
+            foreach (var renderer in VisibleGeometryRenderers(root))
             {
-                if (filter.sharedMesh == null) continue;
-                Matrix4x4 matrix = toRoot * filter.transform.localToWorldMatrix;
-                foreach (Vector3 vertex in filter.sharedMesh.vertices) yield return matrix.MultiplyPoint3x4(vertex);
-            }
-            foreach (var skinned in root.GetComponentsInChildren<SkinnedMeshRenderer>(true))
-            {
-                if (skinned.sharedMesh == null) continue;
-                var baked = new Mesh();
+                Mesh mesh;
+                Mesh baked = null;
                 try
                 {
-                    skinned.BakeMesh(baked, true);
-                    Matrix4x4 matrix = toRoot * skinned.transform.localToWorldMatrix;
-                    foreach (Vector3 vertex in baked.vertices) yield return matrix.MultiplyPoint3x4(vertex);
+                    if (renderer is SkinnedMeshRenderer skinned && skinned.sharedMesh != null)
+                    {
+                        baked = new Mesh();
+                        skinned.BakeMesh(baked, true);
+                        mesh = baked;
+                    }
+                    else if (renderer is MeshRenderer && renderer.TryGetComponent(out MeshFilter filter) && filter.sharedMesh != null)
+                        mesh = filter.sharedMesh;
+                    else
+                        continue;
+                    Matrix4x4 matrix = toRoot * renderer.transform.localToWorldMatrix;
+                    foreach (Vector3 vertex in mesh.vertices) yield return matrix.MultiplyPoint3x4(vertex);
                 }
-                finally { DestroyImmediate(baked); }
+                finally
+                {
+                    if (baked != null) DestroyImmediate(baked);
+                }
             }
         }
     }

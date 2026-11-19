@@ -1,0 +1,142 @@
+{
+    "model": "ReferenceRobot",
+    "unity": "6000.3.24f1",
+    "urp": "17.3.0",
+    "upstreamCommit": "6981f7dc931b53a0bd797725f4dac30b824041d7",
+    "sourceScene": "Assets/Scenes/SampleScene.unity",
+    "previewScene": "Assets/ComparisonTools/Scenes/ReferenceRobot.unity",
+    "pipeline": "Assets/ComparisonTools/Settings/ComparisonPipeline.asset",
+    "colorSpace": "Linear",
+    "sourceModel": "Assets/Graphics/Animations/Robot Hip Hop Dance.fbx",
+    "sourceHierarchy": "Robot Hip Hop Dance",
+    "pose": {
+        "method": "bundled_humanoid_animation",
+        "asset": "Assets/Graphics/Animations/Robot Hip Hop Dance.fbx",
+        "clip": "Dance",
+        "notes": "Bundled animation sampled once; root transform preserved; identical static pose for both images.",
+        "timeSeconds": 2.5
+    },
+    "baseline": "Unlit original _BaseMap * _BaseColor, optional RGB vertex color; same UV transform, alpha clipping, blend, culling and depth write; no lighting, shadows, fog, emission or post-processing.",
+    "notes": "Dance reference robot instantiated from bundled animation FBX with its imported URP Lit material; SampleScene provides lighting. Bundled animation sampled and frozen when compatible; otherwise source pose retained. Camera reframed; non-model renderers, volumes, post-processing and fog disabled. Dedicated URP 17 Forward renderer, 4096 main shadow map, one cascade.",
+    "ambientMode": "Skybox",
+    "skybox": "Assets/Graphics/Materials/Skybox.mat",
+    "resolution": 1024,
+    "supersampling": 2,
+    "msaa": 8,
+    "originalMaterialsUnchanged": true,
+    "orthographicSize": 1.0736759901046754,
+    "ambientIntensity": 1.0,
+    "cameraPosition": {
+        "x": 1.0041401386260987,
+        "y": 1.55089271068573,
+        "z": 6.625144958496094
+    },
+    "cameraRotation": {
+        "x": 5.639336585998535,
+        "y": 189.09027099609376,
+        "z": -5.362036148426341e-8
+    },
+    "boundsCenter": {
+        "x": -0.030608832836151124,
+        "y": 0.9041746258735657,
+        "z": 0.15796375274658204
+    },
+    "boundsSize": {
+        "x": 0.9710112810134888,
+        "y": 1.808168649673462,
+        "z": 0.7747644782066345
+    },
+    "background": {
+        "r": 0.9098039269447327,
+        "g": 0.9098039269447327,
+        "b": 0.9098039269447327,
+        "a": 1.0
+    },
+    "ambientLight": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+    },
+    "materials": [
+        {
+            "path": "Assets/Graphics/Animations/Robot Hip Hop Dance.fbx",
+            "shader": "Universal Render Pipeline/Lit",
+            "texture": "",
+            "serializedSettings": "{\"Material\":{\"serializedVersion\":\"8\",\"m_Name\":\"Robot\",\"m_Shader\":{\"fileID\":4800000,\"guid\":\"933532a4fcc9baf4fa0491de14d08ed7\",\"type\":3},\"m_Parent\":{\"instanceID\":0},\"m_ModifiedSerializedProperties\":0,\"m_ValidKeywords\":[],\"m_InvalidKeywords\":[],\"m_LightmapFlags\":4,\"m_EnableInstancingVariants\":false,\"m_DoubleSidedGI\":false,\"m_CustomRenderQueue\":-1,\"stringTagMap\":{\"RenderType\":\"Opaque\"},\"disabledShaderPasses\":[\"MOTIONVECTORS\"],\"m_LockedProperties\":\"\",\"m_SavedProperties\":{\"serializedVersion\":\"3\",\"m_TexEnvs\":[{\"first\":\"_BaseMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_BumpMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailAlbedoMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailMask\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_DetailNormalMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_EmissionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MainTex\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_MetallicGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_OcclusionMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_ParallaxMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"_SpecGlossMap\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_Lightmaps\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_LightmapsInd\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}},{\"first\":\"unity_ShadowMasks\",\"second\":{\"m_Texture\":{\"instanceID\":0},\"m_Scale\":{\"x\":1.0,\"y\":1.0},\"m_Offset\":{\"x\":0.0,\"y\":0.0}}}],\"m_Ints\":[],\"m_Floats\":[{\"first\":\"_AddPrecomputedVelocity\",\"second\":0.0},{\"first\":\"_AlphaClip\",\"second\":0.0},{\"first\":\"_AlphaToMask\",\"second\":0.0},{\"first\":\"_Blend\",\"second\":0.0},{\"first\":\"_BlendModePreserveSpecular\",\"second\":1.0},{\"first\":\"_BumpScale\",\"second\":1.0},{\"first\":\"_ClearCoatMask\",\"second\":0.0},{\"first\":\"_ClearCoatSmoothness\",\"second\":0.0},{\"first\":\"_Cull\",\"second\":2.0},{\"first\":\"_Cutoff\",\"second\":0.5},{\"first\":\"_DetailAlbedoMapScale\",\"second\":1.0},{\"first\":\"_DetailNormalMapScale\",\"second\":1.0},{\"first\":\"_DstBlend\",\"second\":0.0},{\"first\":\"_DstBlendAlpha\",\"second\":0.0},{\"first\":\"_EnvironmentReflections\",\"second\":1.0},{\"first\":\"_GlossMapScale\",\"second\":0.0},{\"first\":\"_Glossiness\",\"second\":0.0},{\"first\":\"_GlossyReflections\",\"second\":0.0},{\"first\":\"_Metallic\",\"second\":0.0},{\"first\":\"_OcclusionStrength\",\"second\":1.0},{\"first\":\"_Parallax\",\"second\":0.004999999888241291},{\"first\":\"_QueueOffset\",\"second\":0.0},{\"first\":\"_ReceiveShadows\",\"second\":1.0},{\"first\":\"_Smoothness\",\"second\":0.5},{\"first\":\"_SmoothnessTextureChannel\",\"second\":0.0},{\"first\":\"_SpecularHighlights\",\"second\":1.0},{\"first\":\"_SrcBlend\",\"second\":1.0},{\"first\":\"_SrcBlendAlpha\",\"second\":1.0},{\"first\":\"_Surface\",\"second\":0.0},{\"first\":\"_WorkflowMode\",\"second\":1.0},{\"first\":\"_XRMotionVectorsPass\",\"second\":1.0},{\"first\":\"_ZWrite\",\"second\":1.0}],\"m_Colors\":[{\"first\":\"_BaseColor\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_Color\",\"second\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},{\"first\":\"_EmissionColor\",\"second\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}},{\"first\":\"_SpecColor\",\"second\":{\"r\":0.19999995827674867,\"g\":0.19999995827674867,\"b\":0.19999995827674867,\"a\":1.0}}]},\"m_BuildTextureStacks\":[],\"m_AllowLocking\":true}}",
+            "keywords": [],
+            "baseColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "shadowTint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "ramp0": 0.0,
+            "ramp1": 0.0,
+            "rampSmoothness": 0.0,
+            "renderQueue": 2000
+        }
+    ],
+    "renderers": [
+        {
+            "path": "Robot2",
+            "materials": [
+                "Assets/Graphics/Animations/Robot Hip Hop Dance.fbx"
+            ]
+        }
+    ],
+    "lights": [
+        {
+            "name": "Directional Light",
+            "type": "Directional",
+            "shadows": "Soft",
+            "enabled": true,
+            "position": {
+                "x": 0.0,
+                "y": 3.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 17.828678131103517,
+                "y": 136.4591064453125,
+                "z": 337.38616943359377
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "intensity": 1.0
+        },
+        {
+            "name": "Point Light",
+            "type": "Point",
+            "shadows": "None",
+            "enabled": true,
+            "position": {
+                "x": -3.309999942779541,
+                "y": 2.258999824523926,
+                "z": -0.15000000596046449
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.883272647857666,
+                "b": 0.4103773832321167,
+                "a": 1.0
+            },
+            "intensity": 0.4099999964237213
+        }
+    ]
+}
