@@ -1,5 +1,7 @@
 # URP Toon 独立工程
 
+2026-11-19 已清理与 artist 输出无关的示例场景、闲置素材和首轮预览场景。当前保留 9 个角色的 `Assets/ComparisonTools/Scenes/Round2/`、生成这些预览所需的 6 个原场景，以及原材质、动画、贴图和导出工具。下文关于完整上游场景和首轮预览场景的描述属于清理前记录；已有 Comparison 图片与参数文件仍保留。详见 [素材清理记录](../ASSET-CLEANUP.md)。
+
 使用现有 **Unity 6000.3.24f1 / URP 17.3.0**，无需安装其他 Unity 版本。工程设置来自该编辑器自带的 Universal 3D 模板，模型、贴图、材质、Shader 和 16 个原示例场景来自 [Delt06/urp-toon-shader](https://github.com/Delt06/urp-toon-shader)。
 
 上游固定提交：`6981f7dc931b53a0bd797725f4dac30b824041d7`。上游声明环境为 Unity 2021.3 / URP 12.1.6；原说明和许可证分别保存在 `README.upstream.md`、`LICENSE.upstream.md`，第三方模型继续遵循各自许可。

@@ -1,5 +1,7 @@
 # Toon RP 独立工程
 
+2026-11-19 素材清理后，当前入口为 `Assets/Samples/Main/MainSampleScene.unity`，用于生成 `artist/aika_sailor_uniform`。其余 12 个无关示例场景及闲置素材已删除；下文有关完整上游示例、CubeWorld 的说明和验证属于清理前记录。详见 [素材清理记录](../ASSET-CLEANUP.md)。
+
 本目录是从 [Delt06/toon-rp](https://github.com/Delt06/toon-rp) 导入的独立 Unity 工程，保留仓库自带的 Toon RP 包、13 个示例场景、模型和材质。上游工程声明使用 Unity 2022.3.12f1 / Core RP 14.0.9；本工程沿用现有 `6000.3.24f1` 编辑器，不更换 Unity 编译器。
 
 ## Unity 6 适配

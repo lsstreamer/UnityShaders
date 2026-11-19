@@ -1,44 +1,6 @@
 # Unity Toon / NPR 完整用例调研
 
-候选调研更新于 2026-11-17。本地工程清单核对于 2026-11-18。
-
-## 当前工程中的外部包和素材
-
-工作区有两个独立 Unity 工程，均使用 Unity `6000.3.24f1`。下表以本地 `Packages/manifest.json`、`Packages/packages-lock.json`、嵌入包的 `package.json` 和 `Assets/` 为准，包含 Git 忽略的本地下载资源。编辑器自带且工程未引用的包、Unity 内置模块和临时渲染目录略去。[UTSProject 包锁定文件](UTSProject/Packages/packages-lock.json) · [ToonRPProject 包锁定文件](ToonRPProject/Packages/packages-lock.json)
-
-### Unity Package Manager 包
-
-| 包 | 工程及安装方式 | 用途、来源与许可 |
-| --- | --- | --- |
-| Unity Toon Shader `com.unity.toonshader` `0.16.1-preview` | `UTSProject`，Unity 注册表 | Unity 官方 Toon Shader，代码采用 Unity Companion License。缓存内有 Built-in、URP、HDRP 示例，包括项目渲染用到的 UnityChan CelLook。示例角色许可见包内说明。[官方文档](https://docs.unity3d.com/Packages/com.unity.toonshader@0.16/manual/index.html) |
-| Unity glTFast `com.unity.cloud.gltfast` `6.21.0` | `UTSProject`，Unity 注册表 | 导入 GLB/glTF，Apache-2.0。[上游](https://github.com/Unity-Technologies/com.unity.cloud.gltfast) |
-| Toon RP `com.deltation.toon-rp` `0.9.0` | `ToonRPProject`，嵌入包 | Vladislav Kantaev（Delt06）的自定义 SRP，MIT。本地工程已适配 Unity 6，保留 `Assets/Samples/` 下 13 个上游场景及其模型和材质。[上游](https://github.com/Delt06/toon-rp) · [适配说明](ToonRPProject/README.md) |
-| UniGLTF `com.vrmc.gltf` `0.131.4` | 两个工程，嵌入包 | UniVRM 项目的 glTF 基础库，含 UniUnlit，MIT。`UTSProject` 保留 glTFast 作为默认 GLB/glTF 导入器。[上游版本](https://github.com/vrm-c/UniVRM/tree/v0.131.4) |
-| UniVRM `com.vrmc.univrm` `0.131.4` | 两个工程，嵌入包 | VRM Consortium 的 VRM 角色支持，含 `VRM/MToon` Shader，代码和 MToon 均为 MIT。[上游版本](https://github.com/vrm-c/UniVRM/tree/v0.131.4) |
-| URP `17.3.0`、Core RP `17.3.0`、Shader Graph `17.3.0` | `UTSProject` 含三者，`ToonRPProject` 含 Core RP 和 Shader Graph | Unity 官方渲染依赖。`UTSProject` 默认跑 Built-in，Chop Chop 预览用 URP。`ToonRPProject` 用自定义 Toon RP。[UTSProject 说明](UTSProject/README.md) · [ToonRPProject 说明](ToonRPProject/README.md) |
-
-两个工程还解析了 Unity 的 Burst、Collections、Mathematics、Searcher、uGUI、Test Framework 和 Performance Testing 等通用依赖。其中 Unity 分发的第三方库包括 Mono.Cecil `1.11.6`（`com.unity.nuget.mono-cecil`）和 NUnit `2.0.5`（`com.unity.ext.nunit` 的包版本）。`UTSProject` 中的 UniVRM 与 UniGLTF 目录已被 Git 忽略。`ToonRPProject` 整个工程目前在工作区，尚未被 Git 跟踪。[UTSProject 忽略规则](UTSProject/.gitignore) · [UTSProject 包锁定文件](UTSProject/Packages/packages-lock.json) · [ToonRPProject 包锁定文件](ToonRPProject/Packages/packages-lock.json)
-
-### UTSProject 中直接导入的资源
-
-| 资源 | 本地内容 | 来源与许可 |
-| --- | --- | --- |
-| SD Kohaku-chanz `1.1.0` | `Assets/UTSOfficialCharacters/UnityChan/SD_Kohaku_chanz/`，含夏制服 Misaki 与 `Misaki_sum.unity` | Unity Technologies Japan，Unity-Chan License 2.02。[官方下载](https://unity3d.jp/unity-chan_contents/releaseNote.php?id=SDKohakuchanz&lang=en) |
-| UnityChan Urban Street Style | `Assets/UTSOfficialCharacters/UrbanStreetStyle/`，含角色、8 个场景、UnityChan SpringBone 和 Unity-Chan Toon Shader `2.0.7` | Born Digital 教程书配套下载，版权声明为 Urakami、Maejima，随包附 Unity-Chan License 2.0。[配套书资源页](https://www.borndigital.co.jp/book/15564.html) · [UTS2 上游](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) |
-| VRoid Preset A–Z 的原始 A/B/C 模型 | `Assets/VRoidSamples/`，含 `AvatarSample_A`、`AvatarSample_B`、`AvatarSample_C` 三个 VRM 及对应预览场景，沿用 MToon 材质 | pixiv Inc. / VRoid Project。模型适用 VRoid 官方条款，下载镜像和哈希记录在本地 `SOURCE.json`。[VRoid 官方条款](https://vroid.pixiv.help/hc/en-us/articles/4402394424089-VRoidPreset-A-Z) |
-| Chop Chop（Unity Open Project #1） | `Assets/ChopChop/`，含 9 个角色预览场景，以及配套模型、贴图、材质和 Toon Shader Graph | 导入角色预览所需的上游资源，固定提交 `608eac98df29cd97821a6115cd52dfb9027345b1`，随包附 Apache-2.0。[上游版本](https://github.com/UnityTechnologies/open-project-1/tree/608eac98df29cd97821a6115cd52dfb9027345b1) |
-
-上表四组资源均已存在于本机，对应目录由 `.gitignore` 忽略。工程也包含 `Assets/Models/CafeHouse/` 和 `Assets/Models/Round_01/` 下的模型及配套场景，当前工程资料中未核实其是否来自公开发布包，也未核实上游许可。[UTSProject 忽略规则](UTSProject/.gitignore) · [工程模型目录](UTSProject/Assets/Models) · [工程场景目录](UTSProject/Assets/Scenes)
-
-### ToonRPProject 示例中随附的第三方素材
-
-| 示例 | 素材及来源 |
-| --- | --- |
-| `Main` | Quaternius 的 [Animated Mech Pack](https://quaternius.com/packs/animatedmech.html)（George，本地附 CC0 1.0）和 [Ultimate Stylized Nature Pack](https://quaternius.com/packs/ultimatestylizednature.html)，以及 Unity Asset Store 的 [Aika: Sailor Uniform](https://assetstore.unity.com/packages/3d/characters/aika-sailor-uniform-222398) 和 [Stone](https://assetstore.unity.com/packages/3d/environments/landscapes/stone-62333)。 |
-| `CubeWorld`、`Cyberpunk`、`PixelFPS`、`Space` | 分别使用 Quaternius 的 [Cube World Kit](https://quaternius.com/packs/cubeworldkit.html)、[Cyberpunk Game Kit](https://quaternius.com/packs/cyberpunkgamekit.html)、[Toon Shooter Game Kit](https://quaternius.com/packs/toonshootergamekit.html) 和 [Ultimate Space Kit](https://quaternius.com/packs/ultimatespacekit.html)（本地附 CC0 1.0）。 |
-| MatCap 贴图 | 上游素材清单还列出 [nidorx/matcaps](https://github.com/nidorx/matcaps)。 |
-
-Toon RP 的 MIT 许可见包内 `LICENSE.md`。示例素材的授权以各自随附文件或发布页为准，Aika 和 Stone 的具体再分发条款尚未核实。[Toon RP 上游素材清单](ToonRPProject/README.upstream.md#used-assets) · [Toon RP 包许可](ToonRPProject/Packages/com.deltation.toon-rp/LICENSE.md)
+候选调研更新于 2026-11-17。本文保留候选选型调研；当前工程使用的素材包及下载地址统一记录在 [README](README.md#素材包依赖与下载地址)。
 
 ## 当前需求与统计口径
 
