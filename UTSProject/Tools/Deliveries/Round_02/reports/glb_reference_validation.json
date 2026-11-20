@@ -1,0 +1,97 @@
+{
+  "completed": true,
+  "models": 8,
+  "referenceImages": 16,
+  "cameraFiles": 8,
+  "schemaMatches": "bike",
+  "results": [
+    {
+      "model": "porsche",
+      "files": [
+        "porsche.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    },
+    {
+      "model": "crystal",
+      "files": [
+        "crystal.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    },
+    {
+      "model": "suv",
+      "files": [
+        "suv.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    },
+    {
+      "model": "bunny",
+      "files": [
+        "bunny.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    },
+    {
+      "model": "shop",
+      "files": [
+        "shop.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    },
+    {
+      "model": "mario",
+      "files": [
+        "mario.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    },
+    {
+      "model": "quesillo",
+      "files": [
+        "quesillo.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    },
+    {
+      "model": "witch",
+      "files": [
+        "witch.glb",
+        "cameras.json",
+        "view0.png",
+        "view1.png"
+      ],
+      "referenceFilesByteIdentical": true,
+      "glbUnchanged": true
+    }
+  ]
+}

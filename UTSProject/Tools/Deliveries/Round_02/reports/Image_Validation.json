@@ -1,0 +1,882 @@
+[
+  {
+    "model": "porsche",
+    "image": "ref/view0.png",
+    "bounds": [
+      84,
+      376,
+      846,
+      699
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "ref/view1.png",
+    "bounds": [
+      220,
+      384,
+      893,
+      694
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      84,
+      376,
+      846,
+      699
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      71,
+      380,
+      859,
+      696
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      95,
+      381,
+      857,
+      696
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      83,
+      376,
+      870,
+      699
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      84,
+      376,
+      846,
+      699
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      71,
+      380,
+      859,
+      696
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      95,
+      381,
+      857,
+      696
+    ],
+    "passed": true
+  },
+  {
+    "model": "porsche",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      83,
+      376,
+      870,
+      699
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "ref/view0.png",
+    "bounds": [
+      131,
+      168,
+      781,
+      807
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "ref/view1.png",
+    "bounds": [
+      214,
+      278,
+      859,
+      782
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      131,
+      168,
+      781,
+      807
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      248,
+      291,
+      853,
+      803
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      243,
+      275,
+      893,
+      777
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      171,
+      216,
+      776,
+      770
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      131,
+      168,
+      781,
+      807
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      248,
+      291,
+      853,
+      803
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      243,
+      275,
+      893,
+      777
+    ],
+    "passed": true
+  },
+  {
+    "model": "crystal",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      171,
+      216,
+      776,
+      770
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "ref/view0.png",
+    "bounds": [
+      259,
+      193,
+      765,
+      822
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "ref/view1.png",
+    "bounds": [
+      259,
+      240,
+      765,
+      810
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      259,
+      193,
+      765,
+      822
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      125,
+      250,
+      899,
+      805
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      259,
+      240,
+      765,
+      810
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      125,
+      243,
+      899,
+      803
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      259,
+      193,
+      765,
+      822
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      125,
+      250,
+      899,
+      805
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      259,
+      240,
+      765,
+      810
+    ],
+    "passed": true
+  },
+  {
+    "model": "suv",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      125,
+      243,
+      899,
+      803
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "ref/view0.png",
+    "bounds": [
+      267,
+      165,
+      925,
+      785
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "ref/view1.png",
+    "bounds": [
+      134,
+      407,
+      755,
+      854
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      267,
+      165,
+      925,
+      785
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      172,
+      240,
+      866,
+      773
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      185,
+      370,
+      844,
+      828
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      244,
+      260,
+      938,
+      822
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      267,
+      165,
+      925,
+      785
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      172,
+      240,
+      866,
+      773
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      185,
+      370,
+      844,
+      828
+    ],
+    "passed": true
+  },
+  {
+    "model": "bunny",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      244,
+      260,
+      938,
+      822
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "ref/view0.png",
+    "bounds": [
+      182,
+      137,
+      792,
+      949
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "ref/view1.png",
+    "bounds": [
+      130,
+      118,
+      845,
+      964
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      182,
+      137,
+      792,
+      949
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      161,
+      135,
+      825,
+      955
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      222,
+      154,
+      832,
+      961
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      189,
+      155,
+      854,
+      935
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      182,
+      137,
+      792,
+      949
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      161,
+      135,
+      825,
+      955
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      222,
+      154,
+      832,
+      961
+    ],
+    "passed": true
+  },
+  {
+    "model": "shop",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      189,
+      155,
+      854,
+      935
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "ref/view0.png",
+    "bounds": [
+      193,
+      180,
+      830,
+      874
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "ref/view1.png",
+    "bounds": [
+      193,
+      153,
+      831,
+      867
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      193,
+      180,
+      830,
+      874
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      346,
+      171,
+      678,
+      884
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      193,
+      153,
+      831,
+      867
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      346,
+      171,
+      678,
+      884
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      193,
+      180,
+      830,
+      874
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      346,
+      171,
+      678,
+      884
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      193,
+      153,
+      831,
+      867
+    ],
+    "passed": true
+  },
+  {
+    "model": "mario",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      346,
+      171,
+      678,
+      884
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "ref/view0.png",
+    "bounds": [
+      98,
+      229,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "ref/view1.png",
+    "bounds": [
+      154,
+      302,
+      870,
+      777
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      98,
+      229,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      98,
+      337,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      98,
+      383,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      98,
+      273,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      98,
+      229,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      98,
+      337,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      98,
+      383,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "quesillo",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      98,
+      273,
+      925,
+      860
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "ref/view0.png",
+    "bounds": [
+      244,
+      136,
+      781,
+      897
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "ref/view1.png",
+    "bounds": [
+      276,
+      155,
+      746,
+      876
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "camera_only/frames/frame_0000.png",
+    "bounds": [
+      244,
+      136,
+      781,
+      897
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "camera_only/frames/frame_0030.png",
+    "bounds": [
+      329,
+      124,
+      697,
+      901
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "camera_only/frames/frame_0060.png",
+    "bounds": [
+      244,
+      135,
+      780,
+      896
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "camera_only/frames/frame_0090.png",
+    "bounds": [
+      329,
+      146,
+      697,
+      902
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "bounding_sphere/frames/frame_0000.png",
+    "bounds": [
+      244,
+      136,
+      781,
+      897
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "bounding_sphere/frames/frame_0030.png",
+    "bounds": [
+      329,
+      124,
+      697,
+      901
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "bounding_sphere/frames/frame_0060.png",
+    "bounds": [
+      244,
+      135,
+      780,
+      896
+    ],
+    "passed": true
+  },
+  {
+    "model": "witch",
+    "image": "bounding_sphere/frames/frame_0090.png",
+    "bounds": [
+      329,
+      146,
+      697,
+      902
+    ],
+    "passed": true
+  }
+]

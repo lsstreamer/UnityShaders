@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "models": 8,
+  "reference_images": 16,
+  "orbit_images": 1920,
+  "geometry_masks": 80,
+  "total_png_images": 2016,
+  "sampled_visual_images": 80,
+  "render_exit_code": 0,
+  "project": "/home/sirui/workspace/UnityProjects/UTSProject",
+  "output_root": "/home/sirui/workspace/shaderNPR/comparison/unity/val",
+  "resolution": 1024,
+  "msaa": 8,
+  "models_rendered": [
+    "porsche",
+    "crystal",
+    "suv",
+    "bunny",
+    "shop",
+    "mario",
+    "quesillo",
+    "witch"
+  ]
+}

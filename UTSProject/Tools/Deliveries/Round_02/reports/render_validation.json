@@ -1,0 +1,82 @@
+[
+  {
+    "model": "porsche",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  },
+  {
+    "model": "crystal",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  },
+  {
+    "model": "suv",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  },
+  {
+    "model": "bunny",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  },
+  {
+    "model": "shop",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  },
+  {
+    "model": "mario",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  },
+  {
+    "model": "quesillo",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  },
+  {
+    "model": "witch",
+    "images": 252,
+    "refs": 2,
+    "orbitFrames": 240,
+    "geometryMasks": 10,
+    "resolution": 1024,
+    "msaa": 8,
+    "validated": true
+  }
+]

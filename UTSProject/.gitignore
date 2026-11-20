@@ -40,3 +40,8 @@
 /Assets/ChopChop/
 /Assets/ChopChop.meta
 /Comparison/ChopChop/
+
+# Per-round generated delivery artifacts
+/Tools/Deliveries/Round_*/archives/
+/Tools/Deliveries/Round_*/logs/
+/Tools/Deliveries/Round_*/previews/

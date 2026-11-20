@@ -1,0 +1,18 @@
+{
+  "completed": true,
+  "movedEntries": 19,
+  "movedFileHashesVerified": true,
+  "unchangedAssetAndConfigFiles": 325,
+  "unchangedOutputFiles": 2056,
+  "modelsListed": [
+    "porsche",
+    "crystal",
+    "suv",
+    "bunny",
+    "shop",
+    "mario",
+    "quesillo",
+    "witch"
+  ],
+  "renderTriggered": false
+}

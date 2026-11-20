@@ -1,0 +1,66 @@
+{
+  "completed": true,
+  "models": 8,
+  "unityConfigurationPreserved": true,
+  "existingPngImages": 2016,
+  "freshReferenceImages": 16,
+  "byteIdenticalReferenceImages": 16,
+  "results": [
+    {
+      "model": "porsche",
+      "scene": "Assets/Scenes/Round_02/porsche.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    },
+    {
+      "model": "crystal",
+      "scene": "Assets/Scenes/Round_02/crystal.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    },
+    {
+      "model": "suv",
+      "scene": "Assets/Scenes/Round_02/suv.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    },
+    {
+      "model": "bunny",
+      "scene": "Assets/Scenes/Round_02/bunny.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    },
+    {
+      "model": "shop",
+      "scene": "Assets/Scenes/Round_02/shop.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    },
+    {
+      "model": "mario",
+      "scene": "Assets/Scenes/Round_02/mario.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    },
+    {
+      "model": "quesillo",
+      "scene": "Assets/Scenes/Round_02/quesillo.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    },
+    {
+      "model": "witch",
+      "scene": "Assets/Scenes/Round_02/witch.unity",
+      "freshReferences": 2,
+      "byteIdenticalReferences": 2,
+      "passed": true
+    }
+  ]
+}

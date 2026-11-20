@@ -1,0 +1,69 @@
+{
+  "models": [
+    {
+      "name": "porsche",
+      "meshes": 1843,
+      "triangles": 113328,
+      "localOrtho": 2.788789987564087,
+      "orbitSafeOrtho": 6.060081958770752,
+      "verified": true
+    },
+    {
+      "name": "crystal",
+      "meshes": 5,
+      "triangles": 140,
+      "localOrtho": 6.21038818359375,
+      "orbitSafeOrtho": 7.741231918334961,
+      "verified": true
+    },
+    {
+      "name": "suv",
+      "meshes": 70,
+      "triangles": 19759,
+      "localOrtho": 4.174576282501221,
+      "orbitSafeOrtho": 6.632937431335449,
+      "verified": true
+    },
+    {
+      "name": "bunny",
+      "meshes": 6,
+      "triangles": 12249,
+      "localOrtho": 3.9892733097076416,
+      "orbitSafeOrtho": 6.546444892883301,
+      "verified": true
+    },
+    {
+      "name": "shop",
+      "meshes": 35,
+      "triangles": 34070,
+      "localOrtho": 6.399999618530273,
+      "orbitSafeOrtho": 6.502042293548584,
+      "verified": true
+    },
+    {
+      "name": "mario",
+      "meshes": 4,
+      "triangles": 35326,
+      "localOrtho": 6.400001049041748,
+      "orbitSafeOrtho": 7.12331485748291,
+      "verified": true
+    },
+    {
+      "name": "quesillo",
+      "meshes": 5,
+      "triangles": 10900,
+      "localOrtho": 6.399999141693115,
+      "orbitSafeOrtho": 7.856741905212402,
+      "verified": true
+    },
+    {
+      "name": "witch",
+      "meshes": 58,
+      "triangles": 150192,
+      "localOrtho": 6.400001049041748,
+      "orbitSafeOrtho": 6.864468097686768,
+      "verified": true
+    }
+  ],
+  "verified": true
+}

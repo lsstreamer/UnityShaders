@@ -98,3 +98,7 @@ bash render.sh house
 ```
 
 完整命令和配置说明见 [UTSProject/README.md](UTSProject/README.md)。
+
+## 分轮交付资料
+
+Round_02 及后续轮次的脚本、日志和验收资料统一收在 `UTSProject/Tools/Deliveries/Round_XX/`（相对 UnityProjects）；使用说明见 [分轮交付目录](UTSProject/Tools/Deliveries/README.md)。正式渲染结果的位置不变。

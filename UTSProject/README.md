@@ -168,3 +168,7 @@ CHOPCHOP_REFS_ONLY=1 CHOPCHOP_OUTPUT=/workspace/tmp/chopchop_refs bash render_ch
 默认包含除 `SlimeCritter` 外的八个角色，每个角色输出到 `<output>/<角色名>/ref/`，`view0.png` 为正面，`view1.png` 为背面。灯光沿用各角色预览场景的方向，白色方向光强度默认为 `1.6`、环境光为 `0.2`；可用 `CHOPCHOP_LIGHT_INTENSITY`、`CHOPCHOP_AMBIENT_INTENSITY` 调整。`CHOPCHOP_NAMES` 可指定逗号分隔的角色名。每个角色的 `settings.json` 记录本次灯光、相机和材质设置。
 
 确认参考图后，设置 `CHOPCHOP_GROUND_TRUTH=1` 生成正式环绕数据。默认每套环绕 120 帧，可用 `CHOPCHOP_FRAME_COUNT` 调整。
+
+## 分轮交付资料
+
+Round_02 及后续轮次的脚本、日志和验收资料统一收在 `UTSProject/Tools/Deliveries/Round_XX/`（相对 UnityProjects）；使用说明见 [分轮交付目录](Tools/Deliveries/README.md)。正式渲染结果的位置不变。
